@@ -46,11 +46,15 @@ details{margin-top:14px}summary{cursor:pointer;font-weight:600}
 .eq{margin:12px 0}.eq label.opt{cursor:pointer}.eq input[type=radio]{margin-right:8px}
 .score{font:700 2.4rem/1.1 Georgia,serif}
 .rev{border-left:4px solid var(--line);padding-left:12px;margin:14px 0}.rev.ok{border-color:var(--ok)}.rev.wa{border-color:var(--wa)}.rev.ko{border-color:var(--ko)}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 6px}
+.nav a{padding:8px 16px;border:1px solid var(--line);border-radius:8px;color:var(--ink);text-decoration:none;font-weight:600;background:var(--card)}
+.nav a:hover{border-color:var(--ac);color:var(--ac)}.nav a[aria-current=page]{background:var(--ac);border-color:var(--ac);color:#fff}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
 <main>
+<nav class="nav" aria-label="Secciones"><a href="./" aria-current="page">Estudio</a><a href="tablas/">Tablas</a><a href="ia/">IA</a></nav>
 <h1>Estudio de Embriología</h1>
 <p class="sub" id="sub"></p>
 <div class="tabs" role="group" aria-label="Modo">
