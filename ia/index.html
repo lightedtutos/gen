@@ -87,10 +87,14 @@ function burbuja(cl,t){const d=document.createElement('div');d.className='m '+cl
 async function enviar(){
   const t=$('#inp').value.trim();if(!t||busy)return;
   if(typeof puter==='undefined'){burbuja('s','No se pudo cargar Puter (¿sin internet o bloqueado?). Revisa tu conexión y recarga la página.');return}
-  busy=true;$('#send').disabled=true;$('#inp').value='';
+  busy=true;$('#send').disabled=true;
+  try{if(puter.auth&&!puter.auth.isSignedIn())await puter.auth.signIn()}
+  catch(e){burbuja('s','No se completó el inicio de sesión en Puter. Permite las ventanas emergentes de esta página y vuelve a enviar.');busy=false;$('#send').disabled=false;return}
+  $('#inp').value='';
   burbuja('u',t);msgs.push({role:'user',content:t});
   const b=burbuja('a','…');let acc='';
-  let ok=false;
+  let ok=false;const fallos=[];
+  const errTxt=e=>{try{if(typeof e==='string')return e;return (e&&e.error&&(e.error.message||e.error.code))||(e&&e.message)||JSON.stringify(e)}catch(_){return String(e)}};
   for(const modelo of GRATIS){
     try{
       acc='';
@@ -98,10 +102,11 @@ async function enviar(){
       if(r&&r[Symbol.asyncIterator]){for await(const p of r){acc+=(p&&p.text)||'';b.textContent=acc||'…';$('#log').scrollTop=1e9}}
       else{const c=r&&r.message?r.message.content:r;acc=typeof c==='string'?c:Array.isArray(c)?c.map(x=>x.text||'').join(''):String(c)}
       if(acc.trim()){ok=true;break}
-    }catch(e){}
+      fallos.push(modelo+': respuesta vacía');
+    }catch(e){console.error(modelo,e);fallos.push(modelo+': '+errTxt(e))}
   }
   if(ok){b.textContent=acc;msgs.push({role:'assistant',content:acc})}
-  else{b.className='m s';b.textContent='No pude obtener respuesta. Si cerraste la ventana de Puter, vuelve a enviar y entra con tu cuenta gratuita.';msgs.pop()}
+  else{b.className='m s';b.textContent='No pude obtener respuesta.\n\nDetalle técnico:\n'+fallos.join('\n');msgs.pop()}
   busy=false;$('#send').disabled=false;$('#inp').focus();
 }
 $('#send').onclick=enviar;
