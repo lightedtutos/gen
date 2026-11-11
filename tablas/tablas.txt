@@ -1,0 +1,283 @@
+# EMBRIOLOGÍA - TABLAS DE ESTUDIO (Arteaga Martínez, 3ra edición)
+# Formato: cada línea es "PREGUNTA | RESPUESTA". Las secciones empiezan con "=== TÍTULO ===".
+# En las tablas con más columnas, las columnas van separadas por " | " en el orden en que aparecen.
+# Las subsecciones empiezan con "--- SUBTÍTULO ---".
+
+
+=== REGULACIÓN MOLECULAR (GENITAL MASCULINO) ===
+LIM1, LHX9, EMX2 | FORMA LA CRESTA UROGENITAL
+SRY | EN EL BRAZO CORTO PORCIÓN DISTAL (EN HOMBRES) ES EL GEN DETERMINANTE TESTICULAR
+BMP | PERMITE DIFERENCIACIÓN DE CÉLULAS GERM PRIMORD
+C-KIT | PERMITE DESPLAZAMIENTO DE CÉLULAS GERM PRIMORD
+WT1 Y FACTOR ESTEROIDOGÉNICO 1 | PREPARA EL MESÉNQUIMA DE LA GÓNADA PARA QUE PUEDA DIFERENCIARSE EN OVARIO O TESTÍCULO
+INSL3 Y RXFP2 | INDUCE EL ENGROSAMIENTO DEL GUBERNÁCULO Y PERMITE DAR CONTINUACIÓN A LA FASE TRANSABDOMINAL DEL DESCENSO TESTICULAR
+GENES HOX | PERMITE LA DIFERENCIACION DE GLÁNDULAS SEXUALES MASCULINAS
+HOXA13 Y HOXD13 | SE EXPRESAN EN SENO UROGENITAL Y COND. MESONÉFRICOS
+FGF7-10 | PERMITE LA PROLIFERACIÓN Y RAMIFICACIÓN PROSTÁTICA
+HIALURONANO, PROLACTINA, BMP4, UROCINASA, SHH | AYUDAN AL DESARROLLO DE LA PRÓSTATA
+
+
+=== REGULACIÓN MOLECULAR (RIÑÓN) ===
+LIM 1 Y PAX2 | ETAPAS TEMPRANAS DEL RIÑON
+WT1 | TRANSFORMA EL MESÉNQUIMA EN TÚBULOS RENALES
+GDNF | FORMA LOS BROTES URETERALES
+WNT11 Y BMP7 | RAMIFICA LOS BROTES URETERALES
+FACTORES DE CRECIMIENTO: FGF2-7-10, VEGF, ENDOSTATINO, NEFRONECTINA, RET Y FGFR2 / FACTORES DE TRANSCRIPCIÓN: PAX, HOX11, GDF11, WT1 Y EYA1 | FACTORES POSITIVOS QUE ESTIMULAN LA RAMIFICACIÓN DE LOS BROTES URETERALES Y APARICIÓN DE NUEVAS NEFRONAS
+PROTEÍNAS: BMP2-4, SLIT2 / FACTORES DE TRANSCRIPCIÓN: FOXC1 / RECEPTORES: ROBO2, BMP4R, ALK3R / INHIBIDORES TIROSINA CINASA | FACTORES NEGATIVOS QUE EVITAN LA EXCESIVA RAMIFICACIÓN DE LOS BROTES URETERALES Y APARICIÓN DE VARIOS URETERES O RIÑONES
+WT1 | SE EXPRESA CERCA DEL FUTURO GLOMÉRULO
+WNT4 Y CADHERINA E | SE EXPRESA CERCA DEL FUTURO TUBULO DISTAL
+CADHERINA K0 | SE EXPRESA CERCA DEL FUTURO TUBULO PROXIMAL
+FOXD1 | FORMA EL ESTROMA INTERSTICIAL
+WT1 Y PAX2 | FORMA EL TEJIDO EPITELIAL DE LA NEFRONA
+
+
+=== DESARROLLO DEL OJO ===
+PAX - 6 y SHH | Se forman los campos oculares
+DÍA 22 | Se forman los surcos ópticos
+DÍA 24 | Se forman las vesículas ópticas
+RX/RAX | Importante para formar las vesículas ópticas
+DÍA 28 | Se forma la placoda de la lente
+BMP 4 - 7 | Ayuda a engrosar el ectodermo para formar la placoda de la lente
+SIX 3 - SOX 2 - PAX 6 | Regulan la invaginación de la placoda
+PAX 6 | Indispensable para todo el Ojo. Si no se expresa, NO HABRÁ OJO.
+DÍA 32 | Se invaginan simultáneamente la vesícula óptica y la placoda de la lente
+DÍA 32 | La vesícula se transforma en copa óptica
+PAX 2 | Ayudan a orientar células ganglionares para formar el nervio óptico
+FGF - VSX-2 - SOX-2 | Se expresan en la porción más distal de la vesícula óptica, que se invagina para formar la capa interna de la Copa óptica y forma la RETINA NEURAL.
+FGF - MITF | Se expresan en la porción más proximal de la vesícula óptica, para formar la capa externa de la Copa óptica y forma el EPITELIO PIGMENTARIO DE LA RETINA.
+DÍA 34 | El epitelio posterior de la lente empieza a alargarse y deja de ser cúbico
+PAX-6 - SOX-2 - FOXE-3 | Ayudan al epitelio cúbico a alargarse
+FOXL-2 | Rodea al ojo y se expresa para permitir la proliferación de los párpados
+SEMANA 7 | Empieza la formación de los párpados
+SEMANA 9 | Se fusionan los párpados
+BMP | Fusionan los párpados en la novena semana
+EGF | Actúa sobre el mesénquima para formar el tejido conectivo y muscular del párpado
+FOXC-2 | Permite el correcto desarrollo de las glándulas de Meibomio o tarsales
+FGF-10 y PAX-6 | Forma adenómeros y conductos de las glándulas lacrimales
+
+
+=== SISTEMA NERVIOSO: DERIVADOS DE LAS VESÍCULAS ENCEFÁLICAS ===
+# Formato de estas líneas: ESTRUCTURA | (columna 2) | (columna 3)
+
+--- MIELENCÉFALO - FORMA EL BULBO RAQUÍDEO - LUZ 4TO VENTRÍCULO ---
+
+[BULBO CAUDAL - CERRADO]
+Núcleos grácies | Dorsomediales | Forman vías nerviosas desde la médula.
+Núcleos cuneiformes | Dorsolaterales | Forman vías nerviosas desde la médula.
+Pirámides | Ventrales | Forman vías de fibras corticoespinales que descienden desde la corteza hasta la médula.
+
+[BULBO CEFÁLICO - ABIERTO]
+N. Eferentes Somáticos | Origina el Par C. XII | Inerva la musculatura de la lengua
+N. Eferentes Visc. Especial | Origina Par C. IX - X - XI | Inerva derivados de los arcos faríngeos
+N. Eferentes Visc. General | Inerva musculatura de corazón, sistema digestivo y respiratorio
+N. Aferentes Visc. General | Reciben información del sistema digestivo y del corazón.
+N. Aferentes Visc. Especial | Reciben información de impulsos gustativos
+N. Aferentes Somáticos | Reciben información de los Par C. V - VIII
+Núcleos Olivares | Ventromedial | Coordinación del movimiento mediante el cerebelo
+
+--- METENCÉFALO - FORMA EL PUENTE Y CEREBELO - LUZ 4TO VENTRÍCULO ---
+
+[PORCIÓN VENTRAL - PUENTE O PROTUBERANCIA]
+N. Eferentes Somáticos | Origina el Par C. VI | Inerva la musculatura de la lengua
+N. Eferentes Visc. Especial | Origina Par C. V - VII | Inerva derivados de los arcos faríngeos
+N. Eferentes Visc. General | Inerva glándulas submaxilares y sublinguales
+N. Aferentes Visc. General / N. Aferentes Visc. Especial (celda combinada) | Reciben información del Par C. VII
+N. Aferentes Somáticos | Reciben información de los Par C. V - VIII
+Núcleos pontinos | Ventromedial
+
+[PORCIÓN DORSAL - CEREBELO]
+Labios Rómbicos | Crecen y se fusionan durante el segundo mes formando la PLACA CEREBELOSA
+Porción Craneal Placa | Forma el Vermis y Hemisferios cerebelosos
+Porción Caudal Placa | Forma el Lóbulo floculonodular
+
+--- MESENCÉFALO - FORMA EL CEREBRO MEDIO - LUZ ACUEDUCTO CEREBRAL O DE SILVIO ---
+(Nota general) | MENOS EVOLUCIONADA - INVOLUCRA LA AUDICIÓN Y LA VISIÓN, INSTINTOS DE SUPERVIVENCIA
+Colículos superiores e inferiores | Dorsolaterales | Sirven como relevo para conexiones visuales y auditivas
+N. Eferentes Somáticos | Originan los Pares C. III - IV
+Núcleos de Edinger-Westphal | Controlan los Músculos Esfínter de la Pupila y Ciliares
+Núcleos Rojos y Sustancia Negra | Origen incierto (Se cree que vienen de las placas basales)
+Pedúnculos Cerebrales | Es la zona marginal que experimenta un gran engrosamiento
+
+--- DIENCÉFALO - FORMA EL EPITÁLAMO, TÁLAMO, HIPOTÁLAMO E INFUNDÍBULO - LUZ 3ER VENTRÍCULO ---
+(Nota general) | CARECE DE PLACAS BASALES- TODO SE ORIGINA DE LAS ALARES - NO HAY SURCO LIMITANTE
+
+[EPITÁLAMO]
+Núcleos Habenulares | Comisura Habenular | Comisura posterior
+(SURCO TALÁMICO)
+[TÁLAMO]
+Comisura gris Intertalámica (Sem 7) | Núcleo Geniculado Lateral | Núcleo Geniculado Medio
+(SURCO HIPOTALÁMICO)
+[HIPOTÁLAMO]
+Controla emociones | Cuerpos Mamilares
+
+
+=== DERIVADOS DE ARCOS FARÍNGEOS ===
+
+--- DERIVADOS VASCULARES ---
+PRIMER PAR | ARTERIA MAXILAR Y ARTERIAS CARÓTIDAS EXTERNAS
+SEGUNDO PAR | ARTERIAS HIOIDEAS Y ESTAPEDIAS
+TERCER PAR | ARTERIAS CARÓTIDAS COMUNES Y ARTERIAS CARÓTIDAS INTERNAS
+CUARTO PAR | IZQUIERDA: CAYADO AÓRTICO | DERECHA: SEGM. PROX. ARTERIA SUBCLAVIA DERECHA
+SEXTO PAR | IZQUIERDA PROX: ARTERIA PULM. IZQUIERDA / IZQUIERDA DISTAL: CONDUCTO ARTERIOSO | DERECHA PROX: ARTERIA PULMONAR DERECHA
+
+--- DERIVADOS OSEOS Y CARTILAGINOSOS ---
+PRIMER PAR MECKEL | MARTILLO - YUNQUE - LIGAMENTO ANT. DEL MARTILLO - LIGAMENTO ESFENOMANDIBULAR - PRIMORDIO MANDIBULAR
+SEGUNDO PAR REICHERT | ESTRIBO - PROCESO ESTILOIDES DEL TEMPORAL - LIGAMENTO ESTILOHIOIDEO - ASTAS MENORES DEL HIOIDES
+TERCER PAR | ASTAS MAYORES DEL HIOIDES -
+CUARTO Y SEXTO PAR | SE FUSIONAN PARA ORIGINAR CARTÍLAGOS LARÍNGEOS
+
+--- DERIVADOS MUSCULARES ---
+PRIMER PAR | TODOS LOS MÚSCULOS DE LA MASTICACIÓN - MILOHIOIDEO - VIENTRE ANT. DIGÁSTRICO - TENSOR DEL VELO DEL PALADAR Y DEL TÍMPANO
+SEGUNDO PAR | TODOS LOS MÚSCULOS DE LA EXPRESIÓN FACIAL - ESTRIBO - ESTILOHIOIDEO - VIENTRE POST. DIGÁSTRICO
+TERCERO PAR | MÚSCULO ESTILOFARÍNGEO
+CUARTO PAR Y SEXTO PAR | CRICOTIROIDEO - ELEVADOR DEL VELO PALADAR - CONSTRICTORES DE LA FARINGE Y LARINGE - MUSCULATURA ESTRIADA DEL ESÓFAGO
+
+--- DERIVADOS NERVIOSOS ---
+PRIMER PAR | V PAR CRANEAL TRIGÉMINO (INERVA PIEL DE LA CARA, DIENTES Y MUCOSA NASAL-ORAL)
+SEGUNDO PAR | VII PAR CRANEAL FACIAL (INERVA MUCOSA DE LA LENGUA)
+TERCER PAR | IX PAR CRANEAL GLOSOFARÍNGEO (INERVA MUCOSA DE LA LARINGE)
+CUARTO PAR Y SEXTO PAR | X PAR CRANEAL VAGO (INERVA MUCOSA DE LA FARINGE)
+
+--- BOLSAS FARINGEAS ---
+PRIMER BOLSA | CAVIDAD TIMPÁNICA - ANTRO MASTOIDEO - TUBA AUDITIVA - PARTE DEL TÍMPANO
+SEGUNDA BOLSA | AMÍGDALAS - FOSAS Y CRIPTAS AMIGDALINAS
+TERCER BOLSA | MAYOR PARTE DEL TIMO (TIMO III) - PARATIROIDEAS INFERIORES (PARATIROIDEAS III)
+CUARTA BOLSA | PARTE PEQUEÑA DEL TIMO (TIMO IV) - PARATIROIDES INFERIORES (PARATIROIDES IV)
+PRIMER SURCO FARINGEO | CONDUCTO AUDITIVO EXTERNO
+PRIMER MEMBRANA FARING | PARTE DEL TÍMPANO
+
+
+=== GENES EN EL DESARROLLO DE CARA Y CUELLO ===
+HOX y Ácido Retinoico | Diferenciación craneo caudal de los arcos faríngeos
+HOXA 2 y HOXA 3 | Formación del segundo y tercer arco faríngeo
+SHH - FGF8 - BMP7 | Ayudan a proliferar el segundo arco faríngeo
+SHH - FGF - MSX1 | Organizan, regulan y activan el crecimiento de los procesos faciales
+PAX 6 | Forma engrosamientos del proceso frontonasal: placodas nasales
+BTDB7 - SNAIL2 | Suprimen Cad E para formar hendidura en glándulas salivales
+microARN 21 - RECK PDCD4 | Intensifican el proceso de ramificación de glándulas salivales
+NKX2-1 - PAX8 - FOXEL - HHEX | Diferencian las células progenitoras tiroideas del endodermo
+FOXE-1 | Promueven la proliferación para formar el divertículo tiroideo
+GMC-2 | Necesario para el desarrollo de primordios de las glándulas paratiroideas
+FOXN-1 | Se expresa en la porción ventral de la 3er bolsa faríngea: primordio tímico
+GMC-2 | Se expresa en la porción dorsal de la 3er bolsa faríngea: primordio paratiroides
+
+
+=== REGULACIÓN MOLECULAR DIGESTIVO ===
+SOX2, PDX1, CDX1, CDX2 | DESARROLLO INICIAL DEL TUBO DIGESTIVO
+FGF INHIBE BMP E INDUCE SOX2 | INICIO DE MORFOGÉNESIS DEL TUBO DIGESTIVO
+SEÑALIZACIÓN ÁCIDO RETINOICO | REGIONALIZACIÓN DEL EJE ANTEROPOSTERIOR
+SOX2 | MORFOGÉNESIS DE LA TRAQUEA Y EL ESÓFAGO
+SOX2 | PARTE PROXIMAL Y DISTAL DEL ESTÓMAGO
+CONCENTRACIONES BAJAS DE FGF | ACTIVAN GENES ESPECÍFICOS PARA EL HÍGADO
+BMP Y FGF | PROMUEVE LA ESPECIFICACIÓN HEPÁTICA
+NKX6-3 Y PDX1 | ESPECIFICACIÓN DE CÉLULAS G
+NGN3 Y PAX6 | ESENCIALES PARA PRODUCIR CÉLULAS G Y D
+PAX4 | ESENCIALES PARA PRODUCIR CÉLULAS D
+GATA4 | ESPECIFICACIÓN DEL ESTÓMAGO
+WNT, BMP, SOX2, CDX2 | REGULAN EL LÍMITE ENTRE EL INT. ANTERIOR Y MEDIO
+CDX2 | ESPECIFICACION DEL INTESTINO POSTERIOR
+SMAD1/5/8-SMAD4 - GATA 4 | ESPECIFICACIÓN DEL HÍGADO
+FGF | MODULA LA PROLIFERACIÓN DE LAS YEMA HEPÁTICA
+WNT | NECESARIA PARA LAS YEMAS HEPÁTICAS
+SHH Y PDX1 | DESARROLLO PANCREÁTICO Y MADURACIÓN DE CÉLS.
+NGN3 - MAFA | MARCAN LAS CÉLULAS BETA DIFERENCIADAS
+FGFR2B | PERMITEN EL DESARROLLO DE CÉLULAS EPITELIALES
+
+
+=== CAVIDAD ORAL ===
+DÍA 26+1 | RUPTURA MEMB. BUCOFARI
+FINAL 4TA SEM | FORMACIÓN DE LENGUA
+8VA SEMANA | PAPILAS LINGUALES
+ENTRE SEM 11 Y 13 | YEMAS DEL GUSTO
+PAR CRANEAL V | MUCOSA DE LA LENGUA ANT
+PAR CRANEAL VII | YEMAS GUSTATIVAS
+PAR CRANEAL IX | PAPILAS CIRCUNVALADAS
+PAR CRANEAL IX | MUCOSA DE LA LENGUA POST
+PAR CRANEAL XII | ZONA ANT DE EPIGLOTIS
+6TA SEMANA | PARÓTIDAS
+18VA SEMANA | SECRECION PARÓTIDAS
+6TA SEMANA | SUBMAXILARES
+16TA SEMANA | SECRECION SUBMAXILARES
+8VA SEMANA | SUBLINGUAL
+BTDB7 y SNAIL 2 | HENDIDURAS DE GLÁNDULAS
+FGF y PDFG | PROLIFERACION HENDIDURAS
+RECK y PDCD4 | RAMIFICACION DE GLÁNDULAS
+
+
+=== PALADAR ===
+SEMANA 5 - SEMANA 12 | DESARROLLO DE PALADAR
+SEMANA 7 | SEGMENTO INTERMAXILAR
+SEMANA 6 | PALADAR SECUNDARIO
+SEMANA 9 - SEMANA 10 | FUSIÓN TOTAL DEL PALADAR
+
+
+=== DIGESTIVO (CRONOLOGÍA) ===
+SEMANA 4 | ESÓFAGO
+SEMANA 7 | LONG. RELATIVA DEL ESÓFAGO
+SEMANA 10 | EPIT. CILIND. CILIADO EN ESÓF.
+SEMANA 20-25 | EPIT. ESTRAT. PLANO EN ESÓF.
+SEMANA 4 | DESARROLLO DEL ESTÓMAGO
+SEMANA 5 | CREC. ASIMÉTRICO DEL ESTÓMAGO
+SEMANA 10-12 | GLÁNDULAS GÁSTRICAS
+SEMANA 15-17 | GLÁNDULAS GÁSTRICAS DEL ADULTO
+SEMANA 4 | DUODENO
+SEMANA 5 Y 6 | SE OBLITERA LA LUZ DEL DUODENO
+SEMANA 8 | SE CANALIZA LA LUZ DEL DUODENO
+SEMANA 6 | HERNIACIÓN FISIOLÓGICA
+SEMANA 9 Y 10 | INICIA LA REGRESIÓN DE ASAS
+SEMANA 10 y 11 | CULMINA LA REGRESIÓN DE ASAS
+SEMANA 13 | FINALIZA ORGANOGENESIS DEL INT. D
+SEMANA 22 | CÉL. DE ABSORCIÓN SIM. AL ADULTO
+SEMANA 12 | VELLOSIDADES INTESTINALES
+ANTES DE SEMANA 10 | TENIAE COLI
+SEMANA 5 - SEMANA 10 | HÍGADO DE GRAN TAMAÑO
+SEMANA 18 - SEMANA 20 | DISMINUYE HEMATOP. EN HÍGADO
+SEMANA 13 | LLEGA LA BILIS AL DUODENO
+SEMANA 5 | DESARROLLO DEL PÁNCREAS
+SEMANA 7 | FUSION DE YEMAS DEL PÁNCREAS
+SEMANA 12 | ISLOTES DE LANGERHANS
+SEMANA 10 | CÉL. BETA PRODUCEN INSULINA
+SEMANA 15-17 | CÉL. ALFA PRODUCEN GLUCAGÓN
+
+
+=== CRESTA NEURAL ===
+
+--- CRESTA NEURAL CRANEAL ---
+GANGLIOS DE LOS PARES CRANEALES 3 5 7 9 Y 10
+MÚSCULOS DEL IRIS
+MÚSCULOS CILIARES
+EPITELIO POSTERIOR DE LA CÓRNEA
+
+--- CRESTA NEURAL CIRCUNFARINGEA ---
+CARDÍACA | TABIQUE AORTOPULMONAR, VÁLVULAS SEMILUNARES, TABIQUE INTERVENTRICULAR, PARTE DE LAS ARTERIAS CORONARIAS PRINCIPALES. MÚSCULOS INTRÍNSECOS DE LA LENGUA. CÉLULAS DE SCHWANN
+VAGAL | NEURONAS DEL SISTEMA NERVIOSO ENTÉRICA QUE VAN DESDE EL ESÓFAGO HASTA EL RECTO.
+CRANEAL Y VAGAL | TIMO, PARATIROIDES, CÉLULAS PARAFOLICULARES TIROIDEAS
+
+--- CRESTA NEURAL TRONCAL ---
+GANGLIOS RAQUÍDEOS
+CADENAS GANGLIONARES SIMPÁTICAS Y PARASIMPÁTICAS
+MÉDULA DE LA GLÁNDULA SUPRARRENAL
+LAS QUE MIGRAN VENTROLATERALMENTE | FORMARÁN LOS MELANOCITOS
+
+--- CRESTA NEURAL CRANEAL Y TRONCAL ---
+CÉLULAS DE SCHWANN
+CÉLULAS GLIALES EN LOS GANGLIOS PERIFÉRICOS
+LEPTOMENINGES
+GANGLIOS ENTÉRICOS
+
+
+=== GENES EN EL DESARROLLO DEL SISTEMA RESPIRATORIO ===
+FGF-10 | Ramificación de los bronquios secundarios
+WNT FGF | Desarrollo del esbozo respiratorio
+NKX2.1 | Modula el intestino anterior donde se formará el esbozo respiratorio
+WNT | Regula el crecimiento del tabique traqueoesofágico
+TBX-4 | Determina la presencia del surco laringotraqueal
+HOXA 3 - 5 - HOXB 3 - 6 | Ayuda a la especificación regional de las vías respiratorias
+SHH - BMP4 | Desarrollan la musculatura lisa de las vías respiratorias
+LEFTY 1 - 2 - NODAL - PTX2 | Brindan diferente morfología a los pulmones derecho e izquierdo
+HOXA 5 - HOXB 3 - 4 - 5 - 6 | Están implicados en el desarrollo del pulmón
+HFH-4 | Participa en las 12-13 divisiones de la etapa seudoglandular
+TTF1 - HNF3a - HFH4 | Participan en la etapa canalicular
+TTF1 - HNF3a | Participan en la etapa sacular
+TTF-1 - BMP-4 | Participa en la etapa alveolar
+TTF1 - SP-B | Promueve la generación de Factor Surfactante Pulmonar

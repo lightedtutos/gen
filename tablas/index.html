@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tablas de Embriología</title>
+<style>
+:root{--bg:#f3f5f8;--card:#fff;--ink:#1b2333;--mut:#5b6577;--line:#d8dde6;--ac:#a3126f;--ok:#1c7c6b;--wa:#a86a00;--ko:#b3261e}
+@media(prefers-color-scheme:dark){:root{--bg:#141922;--card:#1d2431;--ink:#e8ecf3;--mut:#9aa5b8;--line:#2f394a;--ac:#e36bb6;--ok:#4fc3a8;--wa:#e0a84a;--ko:#ff8a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif;padding:16px 16px 48px}
+main{max-width:960px;margin:0 auto}
+h1{font:600 1.7rem/1.2 Georgia,'Iowan Old Style',serif;margin:8px 0 4px}
+.sub{color:var(--mut);margin:0 0 16px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+select,textarea,input[type=text],button{font:inherit;color:inherit}
+select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);flex:1;min-width:180px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.tag{color:var(--ac);font-weight:600;font-size:.9rem;margin:0 0 6px}
+.btn{padding:9px 18px;border:0;border-radius:8px;background:var(--ac);color:#fff;font-weight:600;cursor:pointer;margin-top:10px}
+.btn.sec{background:transparent;color:var(--ink);border:1px solid var(--line)}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.v{font-weight:700}.v.ok{color:var(--ok)}.v.wa{color:var(--wa)}.v.ko{color:var(--ko)}
+.meter{height:8px;background:var(--line);border-radius:4px;overflow:hidden;min-width:70px}.meter i{display:block;height:100%;background:var(--ok)}
+details{margin-top:14px}summary{cursor:pointer;font-weight:600}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.9rem}
+td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
+.score{font:700 2.4rem/1.1 Georgia,serif}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 6px}
+.nav a{padding:8px 16px;border:1px solid var(--line);border-radius:8px;color:var(--ink);text-decoration:none;font-weight:600;background:var(--card)}
+.nav a:hover{border-color:var(--ac);color:var(--ac)}.nav a[aria-current=page]{background:var(--ac);border-color:var(--ac);color:#fff}
+[hidden]{display:none!important}
+
+/* ===== Pestaña Tablas ===== */
+.info{color:var(--mut);margin:0 0 10px}
+.tbar{position:sticky;top:0;z-index:5;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:12px}
+.tbar .btn{margin:0}.tbar b{font-variant-numeric:tabular-nums}
+.tbar .acts{display:flex;gap:8px}
+#sum{scroll-margin-top:72px}.sumc{margin-bottom:14px}
+.twrap{overflow-x:auto;border-radius:10px}
+table.tt{table-layout:fixed;margin:0;background:var(--card);border:1px solid var(--line);font-size:.92rem}
+table.tt.c3{min-width:640px}
+.tt td,.tt th{padding:8px 10px;border:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}
+.tt .gh th{background:color-mix(in srgb,var(--ac) 16%,var(--card));font-weight:700}
+.tt .gh.s th{background:color-mix(in srgb,var(--ac) 7%,var(--card));font-weight:600}
+.tt .sep td{background:color-mix(in srgb,var(--ac) 10%,var(--card));text-align:center;font-weight:600;font-size:.8rem;letter-spacing:.04em}
+.tt td.lab{color:var(--mut);font-style:italic}
+.tt td.fill{padding:4px}
+.tt td.fill textarea{width:100%;min-height:0;padding:6px 8px;font-size:.92rem;line-height:1.4;border:1px solid var(--line);border-radius:6px;background:transparent;resize:vertical;display:block}
+.tt td.fill textarea:read-only{opacity:.85}
+.tt td.ok{background:color-mix(in srgb,var(--ok) 14%,var(--card))}
+.tt td.wa{background:color-mix(in srgb,var(--wa) 14%,var(--card))}
+.tt td.ko{background:color-mix(in srgb,var(--ko) 12%,var(--card))}
+.fb{font-size:.82rem;margin:4px 2px 2px}.fb:empty{display:none}
+.lnk{background:none;border:0;color:var(--ac);text-decoration:underline;cursor:pointer;padding:0 0 0 6px;font-size:.82rem}
+.tt .miss td{font-size:.85rem;color:var(--ko)}
+</style>
+</head>
+<body>
+<main>
+<nav class="nav" aria-label="Secciones"><a href="../">Estudio</a><a href="./" aria-current="page">Tablas</a><a href="../ia/">IA</a></nav>
+<h1>Tablas de Embriología</h1>
+<p class="sub" id="sub">Cargando tablas…</p>
+<div id="app" hidden>
+  <div class="bar">
+    <select id="tabla" aria-label="Tabla"></select>
+    <select id="modo" aria-label="Modo">
+      <option value="resp">Completar respuestas (ves la clave)</option>
+      <option value="clave">Completar claves (ves la respuesta)</option>
+      <option value="mix">Mezclado (celdas ocultas al azar)</option>
+      <option value="blanco">Todo en blanco (solo los títulos)</option>
+      <option value="ver">Estudiar (tabla completa)</option>
+    </select>
+  </div>
+  <p class="info" id="info"></p>
+  <div class="tbar">
+    <span id="cnt"></span>
+    <span class="acts"><button class="btn" id="chk">Comprobar</button><button class="btn sec" id="again">Nuevo intento</button></span>
+  </div>
+  <div id="sum" aria-live="polite"></div>
+  <div class="twrap" id="tw"></div>
+  <details open><summary>Tu progreso</summary><table id="stats"></table>
+  <button class="btn sec" id="reset">Borrar progreso</button></details>
+</div>
+</main>
+<script>
+/*==PURE==*/
+const STOP=new Set('de la el y o en los las del que se un una con por para al es a e lo su sus'.split(' '));
+const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+function lev(a,b){const d=Array.from({length:a.length+1},(_,i)=>[i]);for(let j=1;j<=b.length;j++)d[0][j]=j;
+  for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return d[a.length][b.length]}
+/* "PAX 6", "PAX-6" y "PAX6" cuentan igual; las palabras se comparan sin tildes ni mayúsculas */
+function toks(s){const t=norm(s).replace(/[^a-z0-9]+/g,' ').replace(/([a-z])\s+(\d)/g,'$1$2').trim();
+  return [...new Set(t.split(' ').filter(w=>w&&!STOP.has(w)))]}
+function tm(u,e){
+  if(u===e)return true;
+  if(/\d/.test(e)||/\d/.test(u))return false;      /* genes y números: exactos */
+  if(e.length<5||u.length<4)return false;
+  if(lev(u,e)<=Math.floor(e.length/5))return true;   /* errores de tipeo */
+  return Math.min(u.length,e.length)>=6&&u.slice(0,6)===e.slice(0,6)}
+function score(u,exp){const E=toks(exp);if(!E.length)return 1;const U=toks(u);if(!U.length)return 0;
+  return E.filter(e=>U.some(x=>tm(x,e))).length/E.length}
+const ptsOf=sc=>sc>=.75?1:sc>=.4?.5:0;
+function parseTablas(txt){
+  const secs=[];let sec=null,grp=null;
+  const newSec=t=>{sec={t,groups:[],cols:1};secs.push(sec);grp=null};
+  const newGrp=(t,kind)=>{if(!sec)newSec('Tabla');grp={t,kind,i:sec.groups.length,rows:[]};sec.groups.push(grp)};
+  for(const raw of txt.replace(/\r/g,'').split('\n')){
+    const l=raw.trim();if(!l||l[0]==='#')continue;
+    let m;
+    if(m=l.match(/^===\s*(.+?)\s*===$/)){newSec(m[1]);continue}
+    if(m=l.match(/^---\s*(.+?)\s*---$/)){newGrp(m[1],'h');continue}
+    if(m=l.match(/^\[(.+)\]$/)){newGrp(m[1],'s');continue}
+    if(!grp)newGrp(null,'n');
+    if(!l.includes('|')&&(m=l.match(/^\((.+)\)$/))){grp.rows.push({sep:true,t:m[1]});continue}
+    const parts=l.split('|').map(s=>s.trim().replace(/\s*\(celda combinada\)\s*$/i,''));
+    grp.rows.push({single:parts.length===1,cells:parts.map((t,i)=>({t,label:parts.length>1&&i===0&&/^\(.*\)$/.test(t)}))});
+  }
+  secs.forEach(s=>s.cols=Math.max(1,...s.groups.flatMap(g=>g.rows.map(r=>r.cells?r.cells.length:1))));
+  return secs.filter(s=>s.groups.some(g=>g.rows.length));
+}
+/* Qué celdas de una fila quedan ocultas (para completar) según el modo */
+function hideSet(r,mode){
+  const idx=r.cells.map((c,i)=>c.label?-1:i).filter(i=>i>=0);
+  if(mode==='ver'||!idx.length)return new Set();
+  if(r.single||mode==='blanco')return new Set(idx);
+  if(mode==='resp')return new Set(idx.filter(i=>i>=1));
+  if(mode==='clave')return new Set(idx.filter(i=>i===0));
+  if(idx.length===1)return new Set(idx);
+  const h=idx.filter(()=>Math.random()<.5);
+  if(!h.length)h.push(idx[Math.floor(Math.random()*idx.length)]);
+  if(h.length===idx.length)h.splice(Math.floor(Math.random()*h.length),1);
+  return new Set(h)}
+/*==/PURE==*/
+
+const $=s=>document.querySelector(s);
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const disp=s=>esc(s).replace(/ \/ /g,'<br>');
+let SECS=[],CELLS=[],LISTS=new Map(),CHECKED=false,CS=null;
+let P={};try{P=JSON.parse(localStorage.getItem('emb_tablas')||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem('emb_tablas',JSON.stringify(P))}catch(e){}};
+let SEL={};try{SEL=JSON.parse(localStorage.getItem('emb_tablas_sel')||'{}')}catch(e){}
+const saveSel=()=>{try{localStorage.setItem('emb_tablas_sel',JSON.stringify({t:CS&&CS.t,m:$('#modo').value}))}catch(e){}};
+
+function build(){
+  const sec=SECS[+$('#tabla').value],mode=$('#modo').value,nc=sec.cols;
+  CS=sec;CELLS=[];LISTS=new Map();CHECKED=false;$('#sum').innerHTML='';
+  const w=nc===1?[100]:nc===2?[36,64]:[28,22,50];
+  let h=`<table class="tt${nc>2?' c3':''}"><colgroup>${w.map(x=>`<col style="width:${x}%">`).join('')}</colgroup><tbody>`;
+  let rows=0;
+  sec.groups.forEach(g=>{
+    if(g.t)h+=`<tr class="gh ${g.kind}"><th colspan="${nc}">${esc(g.t)}</th></tr>`;
+    let lc=0;
+    g.rows.forEach(r=>{
+      if(r.sep){h+=`<tr class="sep"><td colspan="${nc}">${esc(r.t)}</td></tr>`;return}
+      rows++;
+      const hid=hideSet(r,mode);
+      h+='<tr>';
+      r.cells.forEach((c,ci)=>{
+        const span=ci===r.cells.length-1?nc-ci:1,at=span>1?` colspan="${span}"`:'';
+        if(hid.has(ci)){
+          const id=CELLS.length,n=Math.min(4,Math.max(1,Math.ceil(c.t.length/40)));
+          CELLS.push({id,exp:c.t,g,list:!!r.single});if(r.single)lc++;
+          h+=`<td${at} class="fill"><textarea data-i="${id}" rows="${n}" placeholder="${r.single?'Elemento de la lista':'Completa aquí'}" aria-label="Celda ${id+1} de ${esc(sec.t)}" spellcheck="false"></textarea><div class="fb"></div></td>`;
+        }else h+=`<td${at}${c.label?' class="lab"':''}>${disp(c.t)}</td>`;
+      });
+      h+='</tr>';
+    });
+    if(lc)h+=`<tr class="miss" id="ms${g.i}" hidden><td colspan="${nc}"></td></tr>`;
+  });
+  h+='</tbody></table>';
+  $('#tw').innerHTML=h;
+  CELLS.forEach(c=>{c.el=document.querySelector(`#tw [data-i="${c.id}"]`)});
+  document.querySelectorAll('#tw textarea').forEach(t=>{
+    t.addEventListener('input',()=>{t.style.height='auto';t.style.height=Math.max(t.scrollHeight+2,0)+'px';count()});
+    t.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();
+      const a=[...document.querySelectorAll('#tw textarea')],i=a.indexOf(t);(a[i+1]||$('#chk')).focus()}});
+  });
+  const N=CELLS.length;
+  $('#info').textContent=N?`${rows} filas · ${N} celdas por completar. Ignoro tildes y mayúsculas; Enter pasa a la siguiente celda.`:`${rows} filas. Modo estudio: todo visible.`;
+  $('#chk').hidden=!N;count();saveSel();
+}
+function count(){const N=CELLS.length;
+  if(!N){$('#cnt').textContent='';return}
+  const f=CELLS.filter(c=>c.el.value.trim()).length;
+  $('#cnt').innerHTML=CHECKED?'Corregido':`<b>${f}</b> / ${N} completadas`}
+
+function check(){
+  if(CHECKED||!CELLS.length)return;
+  const miss=CELLS.filter(c=>!c.el.value.trim()).length;
+  if(miss&&!confirm(`Te faltan ${miss} celdas sin completar. ¿Comprobar de todos modos?`))return;
+  CHECKED=true;
+  CELLS.forEach(c=>{c.u=c.el.value;c.over=false;c.match=null});
+  LISTS=new Map();
+  CELLS.forEach(c=>{if(c.list){if(!LISTS.has(c.g))LISTS.set(c.g,[]);LISTS.get(c.g).push(c)}else c.sc=c.u.trim()?score(c.u,c.exp):0});
+  /* las listas (sin clave propia) se corrigen sin importar el orden */
+  LISTS.forEach((arr,g)=>{
+    const pr=[];
+    arr.forEach((a,i)=>{if(!a.u.trim())return;arr.forEach((b,j)=>{const s=score(a.u,b.exp);if(s>=.4)pr.push([s,i,j])})});
+    pr.sort((x,y)=>y[0]-x[0]);
+    const ui=new Set(),ej=new Set();arr.forEach(a=>{a.sc=0});
+    pr.forEach(([s,i,j])=>{if(!ui.has(i)&&!ej.has(j)){ui.add(i);ej.add(j);arr[i].sc=s;arr[i].match=arr[j]}});
+    g.missing=arr.filter((_,j)=>!ej.has(j)).map(c=>c.exp);
+  });
+  CELLS.forEach(c=>{c.pts=ptsOf(c.sc)});
+  paint();summary(true);
+  $('#sum').scrollIntoView({block:'start'});
+}
+function paint(){
+  CELLS.forEach(c=>{
+    const cl=c.pts===1?'ok':c.pts>0?'wa':'ko',td=c.el.parentElement;
+    td.classList.remove('ok','wa','ko');td.classList.add(cl);c.el.readOnly=true;
+    const cor=c.list?(c.match?c.match.exp:''):c.exp;let f;
+    if(c.over)f='<span class="v ok">✓ Marcada como acertada</span>';
+    else if(c.pts===1)f='<span class="v ok">✓</span>';
+    else f=`<span class="v ${cl}">${c.pts>0?'½ Casi':'✗'}</span>${cor?` <b>Correcto:</b> ${disp(cor)}`:''}<button class="lnk" data-o="${c.id}">Sí la sabía</button>`;
+    td.querySelector('.fb').innerHTML=f;
+  });
+  LISTS.forEach((arr,g)=>{const row=document.getElementById('ms'+g.i);
+    if(row&&g.missing&&g.missing.length){row.hidden=false;row.firstChild.innerHTML='<b>Faltaron en esta lista:</b> '+g.missing.map(disp).join(' · ')}});
+}
+function summary(first){
+  const N=CELLS.length,pts=CELLS.reduce((s,c)=>s+c.pts,0),pct=Math.round(pts/N*100),nota=(pts/N*10).toFixed(1).replace('.',',');
+  const ok=CELLS.filter(c=>c.pts===1).length,wa=CELLS.filter(c=>c.pts>0&&c.pts<1).length,ko=N-ok-wa;
+  $('#sum').innerHTML=`<div class="card sumc"><p class="tag">Resultado · ${esc(CS.t)}</p><div class="score">${nota} / 10</div>
+  <p><b>${String(pts).replace('.',',')}</b> de ${N} celdas · ${pct}% · <span class="v ${pct>=70?'ok':'ko'}">${pct>=70?'Aprobado':'A repasar'}</span> (mínimo 70%) · ${ok} correctas, ${wa} parciales, ${ko} falladas</p></div>`;
+  const p=P[CS.t]||(P[CS.t]={n:0,last:0,best:0});
+  if(first)p.n++;p.last=pct;p.best=Math.max(p.best,pct);save();stats();
+}
+function stats(){$('#stats').innerHTML='<tr><th>Tabla</th><th>Intentos</th><th>Último</th><th>Mejor</th><th></th></tr>'+SECS.map(s=>{
+  const p=P[s.t]||{n:0,last:0,best:0};
+  return `<tr><td>${esc(s.t)}</td><td>${p.n}</td><td>${p.n?p.last+'%':'—'}</td><td>${p.n?p.best+'%':'—'}</td><td><div class="meter"><i style="width:${p.best}%"></i></div></td></tr>`}).join('')}
+
+function init(){
+  $('#tabla').innerHTML=SECS.map((s,i)=>`<option value="${i}">${esc(s.t)}</option>`).join('');
+  const i=SECS.findIndex(s=>s.t===SEL.t);if(i>=0)$('#tabla').value=i;
+  if(SEL.m&&[...$('#modo').options].some(o=>o.value===SEL.m))$('#modo').value=SEL.m;
+  $('#tabla').onchange=$('#modo').onchange=build;
+  $('#again').onclick=build;$('#chk').onclick=check;
+  $('#tw').addEventListener('click',e=>{const b=e.target.closest('[data-o]');if(!b)return;
+    const c=CELLS[+b.dataset.o];c.pts=1;c.over=true;paint();summary(false)});
+  $('#reset').onclick=()=>{if(confirm('¿Borrar todo tu progreso?')){P={};save();stats()}};
+  $('#sub').textContent=`${SECS.length} tablas. Elige una, completa las celdas vacías y pulsa Comprobar.`;
+  $('#app').hidden=false;stats();build();
+}
+(async()=>{
+  try{const r=await fetch('tablas.txt',{cache:'no-store'});if(!r.ok)throw new Error(r.status);SECS=parseTablas(await r.text())}catch(e){}
+  if(!SECS.length){$('#sub').textContent='No se pudo leer tablas.txt. Debe estar en la misma carpeta que este index.html (tablas/). Si abriste el archivo directo desde tu computadora, el navegador lo bloquea: ábrelo desde GitHub Pages o con un servidor local.';return}
+  init();
+})();
+</script>
+</body>
+</html>
