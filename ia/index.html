@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistente IA · Embriología</title>
+<style>
+:root{--bg:#f3f5f8;--card:#fff;--ink:#1b2333;--mut:#5b6577;--line:#d8dde6;--ac:#a3126f;--ok:#1c7c6b;--ko:#b3261e}
+@media(prefers-color-scheme:dark){:root{--bg:#141922;--card:#1d2431;--ink:#e8ecf3;--mut:#9aa5b8;--line:#2f394a;--ac:#e36bb6;--ok:#4fc3a8;--ko:#ff8a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif;padding:16px 16px 40px}
+main{max-width:800px;margin:0 auto}
+h1{font:600 1.7rem/1.2 Georgia,'Iowan Old Style',serif;margin:8px 0 4px}
+.sub{color:var(--mut);margin:0 0 14px}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 6px}
+.nav a{padding:8px 16px;border:1px solid var(--line);border-radius:8px;color:var(--ink);text-decoration:none;font-weight:600;background:var(--card)}
+.nav a:hover{border-color:var(--ac);color:var(--ac)}.nav a[aria-current=page]{background:var(--ac);border-color:var(--ac);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+#log{min-height:260px;max-height:60vh;overflow-y:auto;display:flex;flex-direction:column;gap:10px}
+.m{padding:10px 14px;border-radius:10px;white-space:pre-wrap;max-width:92%}
+.m.u{align-self:flex-end;background:var(--ac);color:#fff}
+.m.a{align-self:flex-start;background:var(--bg);border:1px solid var(--line)}
+.m.s{align-self:center;color:var(--mut);font-size:.92rem;text-align:center}
+.quick{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+button,select,textarea{font:inherit;color:inherit}
+.chip{padding:6px 12px;border:1px solid var(--line);border-radius:99px;background:var(--card);cursor:pointer}
+.chip:hover{border-color:var(--ac)}
+textarea{width:100%;min-height:70px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);resize:vertical}
+select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);max-width:100%}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.btn{padding:9px 18px;border:0;border-radius:8px;background:var(--ac);color:#fff;font-weight:600;cursor:pointer}
+.btn:disabled{opacity:.5;cursor:default}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+small{color:var(--mut)}
+</style>
+</head>
+<body>
+<main>
+<nav class="nav" aria-label="Secciones"><a href="../">Estudio</a><a href="../tablas/">Tablas</a><a href="./" aria-current="page">IA</a></nav>
+<h1>Asistente de estudio</h1>
+<p class="sub" id="ctx">Cargando tu material…</p>
+<section class="card">
+  <div id="log" aria-live="polite"><div class="m s">Pregúntame lo que quieras de tus apuntes. Solo usa modelos gratuitos. La primera vez se abrirá una ventana para entrar con una cuenta gratuita de Puter.</div></div>
+  <div class="quick" id="quick">
+    <button class="chip">Hazme 5 preguntas de un tema</button>
+    <button class="chip">Explícame con un ejemplo sencillo</button>
+    <button class="chip">Resume lo más importante</button>
+    <button class="chip">Evalúa mi respuesta:</button>
+  </div>
+  <textarea id="inp" placeholder="Escribe tu pregunta o tu respuesta…" aria-label="Mensaje"></textarea>
+  <div class="row">
+    <button class="btn" id="send">Enviar</button>
+    <button class="chip" id="clr">Borrar conversación</button>
+  </div>
+</section>
+</main>
+<script src="https://js.puter.com/v2/"></script>
+<script>
+const $=s=>document.querySelector(s);
+let CONTEXTO='',msgs=[],busy=false;
+const GRATIS=['baidu/cobuddy:free','poolside/laguna-m.1:free','nex-agi/nex-n2.5-mini:free'];
+
+function textoDeHTML(html){
+  const d=new DOMParser().parseFromString(html,'text/html');
+  d.querySelectorAll('script,style,nav').forEach(e=>e.remove());
+  d.querySelectorAll('table').forEach(t=>{
+    const rows=[...t.rows].map(r=>[...r.cells].map(c=>c.textContent.trim().replace(/\s+/g,' ')).join(' | '));
+    t.replaceWith(d.createTextNode('\n'+rows.join('\n')+'\n'));
+  });
+  return (d.body.textContent||'').replace(/\n{3,}/g,'\n\n').trim();
+}
+async function leer(url,html){
+  try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)return '';const t=await r.text();return html?textoDeHTML(t):t}catch(e){return ''}
+}
+async function cargar(){
+  const preg=await leer('../preguntas.txt');
+  const tab=await leer('../tablas/tablas.txt');
+  const n=(preg.match(/^\s*\d+\s*[.)\-]\s*.*[?¿]/gm)||[]).length;
+  CONTEXTO='MATERIAL DE ESTUDIO\n\n== PREGUNTAS Y RESPUESTAS DEL ESTUDIANTE ==\n'+preg.slice(0,60000)+(tab?'\n\n== TABLAS ==\n'+tab.slice(0,40000):'');
+  $('#ctx').textContent=`preguntas.txt: ${preg?n+' preguntas cargadas':'NO se encontró'} · tablas.txt: ${tab?'cargado ('+Math.round(tab.length/1000)+' mil caracteres)':'NO se encontró (debe estar en tablas/tablas.txt)'}`;
+}
+const SISTEMA=()=>'Eres un tutor de embriología humana para un estudiante de medicina. Responde siempre en español, de forma clara y breve. '+
+ 'Basa tus respuestas en el MATERIAL DE ESTUDIO que aparece abajo; si algo no está en el material, dilo y da una explicación general marcándola como tal. '+
+ 'Cuando hagas preguntas, hazlas de una en una y espera la respuesta antes de corregir. Al evaluar una respuesta, di qué está bien, qué falta y la respuesta correcta según el material.\n\n'+CONTEXTO;
+
+function burbuja(cl,t){const d=document.createElement('div');d.className='m '+cl;d.textContent=t;$('#log').appendChild(d);$('#log').scrollTop=1e9;return d}
+async function enviar(){
+  const t=$('#inp').value.trim();if(!t||busy)return;
+  if(typeof puter==='undefined'){burbuja('s','No se pudo cargar Puter (¿sin internet o bloqueado?). Revisa tu conexión y recarga la página.');return}
+  busy=true;$('#send').disabled=true;$('#inp').value='';
+  burbuja('u',t);msgs.push({role:'user',content:t});
+  const b=burbuja('a','…');let acc='';
+  let ok=false;
+  for(const modelo of GRATIS){
+    try{
+      acc='';
+      const r=await puter.ai.chat([{role:'system',content:SISTEMA()},...msgs.slice(-14)],{model:modelo,stream:true});
+      if(r&&r[Symbol.asyncIterator]){for await(const p of r){acc+=(p&&p.text)||'';b.textContent=acc||'…';$('#log').scrollTop=1e9}}
+      else{const c=r&&r.message?r.message.content:r;acc=typeof c==='string'?c:Array.isArray(c)?c.map(x=>x.text||'').join(''):String(c)}
+      if(acc.trim()){ok=true;break}
+    }catch(e){}
+  }
+  if(ok){b.textContent=acc;msgs.push({role:'assistant',content:acc})}
+  else{b.className='m s';b.textContent='No pude obtener respuesta. Si cerraste la ventana de Puter, vuelve a enviar y entra con tu cuenta gratuita.';msgs.pop()}
+  busy=false;$('#send').disabled=false;$('#inp').focus();
+}
+$('#send').onclick=enviar;
+$('#inp').onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();enviar()}};
+document.querySelectorAll('#quick .chip').forEach(c=>c.onclick=()=>{$('#inp').value=c.textContent+(c.textContent.endsWith(':')?' ':'');$('#inp').focus()});
+$('#clr').onclick=()=>{msgs=[];$('#log').innerHTML='<div class="m s">Conversación borrada.</div>'};
+cargar();
+</script>
+</body>
+</html>
