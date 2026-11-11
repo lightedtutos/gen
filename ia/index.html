@@ -51,6 +51,7 @@ small{color:var(--mut)}
   <div class="row">
     <button class="btn" id="send">Enviar</button>
     <button class="chip" id="clr">Borrar conversación</button>
+    <select id="mod" aria-label="Modelo"><option value="">Automático (gratis)</option></select>
   </div>
 </section>
 </main>
@@ -58,7 +59,27 @@ small{color:var(--mut)}
 <script>
 const $=s=>document.querySelector(s);
 let CONTEXTO='',msgs=[],busy=false;
-const GRATIS=['baidu/cobuddy:free','poolside/laguna-m.1:free','nex-agi/nex-n2.5-mini:free'];
+/* Los IDs de modelos gratuitos cambian con el tiempo, así que se piden a Puter en vez de fijarlos aquí.
+   Solo se usan los que terminan en ":free". RESPALDO se usa únicamente si Puter no devuelve la lista. */
+let GRATIS=[],DESC=false;
+const RESPALDO=['google/gemma-4-31b-it:free','google/gemma-4-26b-a4b-it:free'];
+const EXCLUIR=/embed|guard|moderat|whisper|tts|image|audio|vision|-vl|ocr|rerank/i;
+const PREFERIR=/gpt-oss|llama|qwen|gemma|deepseek|glm|mistral|nemotron|kimi|minimax/i;
+const escH=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function descubrir(){
+  if(typeof puter==='undefined')return;
+  let ids=[];
+  try{
+    const ms=await puter.ai.listModels();
+    ids=[...new Set((ms||[]).map(m=>m&&m.id).filter(id=>typeof id==='string'&&/:free$/.test(id)&&!EXCLUIR.test(id)))];
+  }catch(e){console.error('listModels',e)}
+  ids.sort((a,b)=>PREFERIR.test(b)-PREFERIR.test(a));
+  DESC=ids.length>0;
+  GRATIS=DESC?ids:RESPALDO.slice();
+  const sel=$('#mod'),prev=sel.value;
+  sel.innerHTML='<option value="">Automático (gratis)</option>'+GRATIS.map(id=>`<option>${escH(id)}</option>`).join('');
+  if(GRATIS.includes(prev))sel.value=prev;
+}
 
 function textoDeHTML(html){
   const d=new DOMParser().parseFromString(html,'text/html');
@@ -90,12 +111,14 @@ async function enviar(){
   busy=true;$('#send').disabled=true;
   try{if(puter.auth&&!puter.auth.isSignedIn())await puter.auth.signIn()}
   catch(e){burbuja('s','No se completó el inicio de sesión en Puter. Permite las ventanas emergentes de esta página y vuelve a enviar.');busy=false;$('#send').disabled=false;return}
+  if(!DESC)await descubrir();
   $('#inp').value='';
   burbuja('u',t);msgs.push({role:'user',content:t});
   const b=burbuja('a','…');let acc='';
   let ok=false;const fallos=[];
   const errTxt=e=>{try{if(typeof e==='string')return e;return (e&&e.error&&(e.error.message||e.error.code))||(e&&e.message)||JSON.stringify(e)}catch(_){return String(e)}};
-  for(const modelo of GRATIS){
+  const elegido=$('#mod').value,orden=(elegido?[elegido,...GRATIS.filter(x=>x!==elegido)]:GRATIS).slice(0,6);
+  for(const modelo of orden){
     try{
       acc='';
       const r=await puter.ai.chat([{role:'system',content:SISTEMA()},...msgs.slice(-14)],{model:modelo,stream:true});
@@ -106,7 +129,7 @@ async function enviar(){
     }catch(e){console.error(modelo,e);fallos.push(modelo+': '+errTxt(e))}
   }
   if(ok){b.textContent=acc;msgs.push({role:'assistant',content:acc})}
-  else{b.className='m s';b.textContent='No pude obtener respuesta.\n\nDetalle técnico:\n'+fallos.join('\n');msgs.pop()}
+  else{b.className='m s';b.textContent='No pude obtener respuesta. Elige otro modelo en la lista de abajo o reintenta en unos minutos (los gratuitos a veces están saturados).\n\nDetalle técnico:\n'+fallos.join('\n');msgs.pop()}
   busy=false;$('#send').disabled=false;$('#inp').focus();
 }
 $('#send').onclick=enviar;
@@ -114,6 +137,7 @@ $('#inp').onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();envi
 document.querySelectorAll('#quick .chip').forEach(c=>c.onclick=()=>{$('#inp').value=c.textContent+(c.textContent.endsWith(':')?' ':'');$('#inp').focus()});
 $('#clr').onclick=()=>{msgs=[];$('#log').innerHTML='<div class="m s">Conversación borrada.</div>'};
 cargar();
+descubrir();
 </script>
 </body>
 </html>
