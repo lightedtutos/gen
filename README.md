@@ -1,8 +1,15 @@
 # Estudio de Embriología
 
-Abre `index.html` (o activa GitHub Pages). Los bancos están en la misma carpeta que `index.html`, un archivo por capítulo.
+Abre `index.html` (con GitHub Pages). Las preguntas se leen de `preguntas.txt`.
 
-- `curado_20_21.js`: preguntas hechas a mano (opción múltiple y abierta).
-- `c14`…`c26`: generados desde los PDF de Arteaga. Cada sección del libro es una pregunta de "Explicar" (la respuesta modelo es el texto completo) y cada oración con término técnico es una pregunta de "Completar".
+Formato de `preguntas.txt` (UTF-8):
 
-Para agregar un banco: crea `nuevo.js` con `BANCOS.push({id,nombre,fuente,items})` y añade su `<script>` en `index.html`.
+```
+# Tema
+1. ¿Pregunta?
+respuesta (detalle opcional)
+2. ¿Otra pregunta?
+respuesta uno / respuesta alternativa
+```
+
+Modos: Practicar (repite más lo que fallas) y Evaluación (con tiempo y nota sobre 10).

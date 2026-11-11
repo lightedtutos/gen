@@ -54,29 +54,19 @@ details{margin-top:14px}summary{cursor:pointer;font-weight:600}
 <h1>Estudio de Embriología</h1>
 <p class="sub" id="sub"></p>
 <div class="tabs" role="group" aria-label="Modo">
-  <button id="t1" aria-pressed="true">Practicar</button><button id="t2" aria-pressed="false">Leer el texto</button><button id="t3" aria-pressed="false">Evaluación</button>
+  <button id="t1" aria-pressed="true">Practicar</button><button id="t3" aria-pressed="false">Evaluación</button>
 </div>
-<details open><summary>Bancos incluidos</summary><div class="bancos" id="bancos"></div></details>
 <div id="vp">
   <div class="bar">
     <select id="tema" aria-label="Tema"></select>
-    <select id="modo" aria-label="Tipo de pregunta">
-      <option value="mix">Mixto</option><option value="op">Opción múltiple (curado)</option>
-      <option value="e">Explicar con tus palabras</option><option value="c">Completar la frase</option>
-    </select>
   </div>
   <section class="card" id="card" aria-live="polite"></section>
   <details open><summary>Tu progreso</summary><table id="stats"></table>
   <button class="btn sec" id="reset">Borrar progreso</button></details>
 </div>
-<div id="vr" class="read" hidden></div>
 <div id="ve" hidden></div>
 </main>
 <script>const BANCOS=[];</script>
-<script src="curado_20_21.js"></script>
-<script src="c14.js"></script><script src="c15.js"></script><script src="c16.js"></script>
-<script src="c20.js"></script><script src="c21.js"></script><script src="c23.js"></script>
-<script src="c24.js"></script><script src="c25.js"></script><script src="c26.js"></script>
 <script type="module">
 function parseTxt(txt){
   const STOP=new Set('de la el y o en los las del que se un una con por para al es a e lo su sus'.split(' '));
@@ -114,11 +104,9 @@ let P={};try{P=JSON.parse(localStorage.getItem('emb2')||'{}')}catch(e){}
 const save=()=>{try{localStorage.setItem('emb2',JSON.stringify(P))}catch(e){}};
 const ALL=[];BANCOS.forEach(b=>b.items.forEach((it,i)=>ALL.push({id:b.id+':'+i,b:b.id,bn:b.nombre,t:it[0],q:it[1],a:it[2],k:it[3],ty:it[4]||'m'})));
 let sel=new Set(BANCOS.some(b=>b.id==='mis')?['mis']:BANCOS.map(b=>b.id));
-$('#sub').textContent=ALL.length.toLocaleString('es')+' preguntas en '+BANCOS.length+' bancos. Las que fallas se repiten más.';
-$('#bancos').innerHTML=BANCOS.map(b=>`<label><input type="checkbox" value="${b.id}" ${sel.has(b.id)?'checked':''}> ${esc(b.nombre)} <small>(${b.items.length})</small></label>`).join('');
-$('#bancos').onchange=e=>{e.target.checked?sel.add(e.target.value):sel.delete(e.target.value);temas();last=null;next()};
-function pool(){const t=$('#tema').value,m=$('#modo').value;
-  return ALL.filter(x=>sel.has(x.b)&&(!t||x.t===t)&&(m==='mix'||(m==='op'?x.ty==='m':x.ty===m||(m==='e'&&(x.ty==='m'||x.ty==='u')))))}
+$('#sub').textContent=ALL.length?ALL.length+' preguntas. Las que fallas se repiten más.':'No se encontró preguntas.txt. Súbelo a la misma carpeta que index.html.';
+function pool(){const t=$('#tema').value;
+  return ALL.filter(x=>sel.has(x.b)&&(!t||x.t===t))}
 function temas(){const ts=[...new Set(ALL.filter(x=>sel.has(x.b)).map(x=>x.t))].sort((a,b)=>a.localeCompare(b,'es'));
   $('#tema').innerHTML='<option value="">Todos los temas</option>'+ts.map(t=>`<option>${esc(t)}</option>`).join('')}
 let cur=null,last=null;
@@ -127,9 +115,9 @@ function pick(){let ids=pool().filter(x=>x!==last);if(!ids.length)ids=pool();if(
   while(k<w.length-1&&r>w[k]){r-=w[k];k++}return ids[k]}
 function grade(ok){const p=P[cur.id]||(P[cur.id]={box:0,ok:0,n:0});p.n++;if(ok){p.ok++;p.box=Math.min(4,p.box+1)}else p.box=0;save();stats()}
 function next(){cur=pick();last=cur;
-  if(!cur){$('#card').innerHTML='<p>No hay preguntas con esta combinación. Cambia el tema, el tipo o los bancos.</p>';return}
-  $('#card').innerHTML=`<p class="tag">${esc(cur.bn)} · ${esc(cur.t)}</p><p class="q">${esc(cur.q)}</p><div id="body"></div><div id="res"></div>`;
-  const m=$('#modo').value;
+  if(!cur){$('#card').innerHTML='<p>No hay preguntas con esta combinación. Cambia el tema.</p>';return}
+  $('#card').innerHTML=`<p class="tag">${esc(cur.t)}</p><p class="q">${esc(cur.q)}</p><div id="body"></div><div id="res"></div>`;
+  const m='mix';
   if(cur.ty==='c')cloze();else if(cur.ty==='e'||cur.ty==='u')open_();else (m==='op'||(m==='mix'&&Math.random()<.5))?mc():open_()}
 function done(html,ok,over){$('#res').innerHTML=`<div class="res">${html}<button class="btn" id="nx">Siguiente</button></div>`;$('#nx').onclick=next;if(over){$('#sk').onclick=()=>{const p=P[cur.id];if(!ok){p.ok++;p.box=Math.min(4,p.box+1);save();stats()}$('#sk').disabled=true}}}
 function mc(){const same=ALL.filter(x=>x!==cur&&x.ty==='m'&&x.t===cur.t),rest=ALL.filter(x=>x!==cur&&x.ty==='m'&&x.t!==cur.t);
@@ -152,17 +140,14 @@ function open_(){$('#body').innerHTML='<textarea id="ans" placeholder="Escribe t
     $('#ev').disabled=true;$('#ans').disabled=true;grade(sc>=.6);
     const chips=gs.map((g,j)=>`<span class="${hit[j]?'h':'m'}">${esc(g[0])}</span>`).join('');
     done(`<span class="v ${cl}">${tx}: ${Math.round(sc*100)}% de los conceptos clave</span><p class="k">${chips}</p><div class="model"><b>Respuesta modelo:</b> ${esc(cur.a)}</div><button class="btn sec" id="sk">Sí la sabía (corregir)</button> `,sc>=.6,true)};$('#ans').focus()}
-function stats(){$('#stats').innerHTML='<tr><th>Banco</th><th>Dominadas</th><th>Aciertos</th><th></th></tr>'+BANCOS.map(b=>{
-  const xs=ALL.filter(x=>x.b===b.id),dom=xs.filter(x=>(P[x.id]||{}).box>=3).length;
+function stats(){const ts=[...new Set(ALL.map(x=>x.t))];$('#stats').innerHTML='<tr><th>Tema</th><th>Dominadas</th><th>Aciertos</th><th></th></tr>'+ts.map(t=>{
+  const xs=ALL.filter(x=>x.t===t),dom=xs.filter(x=>(P[x.id]||{}).box>=3).length;
   let n=0,ok=0;xs.forEach(x=>{const p=P[x.id];if(p){n+=p.n;ok+=p.ok}});
-  return `<tr><td>${esc(b.nombre)}</td><td>${dom}/${xs.length}</td><td>${n?Math.round(ok/n*100)+'%':'—'}</td><td><div class="meter"><i style="width:${dom/xs.length*100}%"></i></div></td></tr>`}).join('')}
-function leer(){const el=$('#vr');el.innerHTML=BANCOS.filter(b=>sel.has(b.id)).map(b=>{
-  const g={};b.items.forEach(it=>{if(it[4]==='e'||!it[4])(g[it[0]]=g[it[0]]||[]).push(it[2])});
-  return `<h2>${esc(b.nombre)}</h2>`+Object.entries(g).map(([t,ps])=>`<details><summary>${esc(t)}</summary>${ps.map(p=>`<p>${esc(p)}</p>`).join('')}</details>`).join('')}).join('')}
-function tab(n){$('#vp').hidden=n!==1;$('#vr').hidden=n!==2;$('#ve').hidden=n!==3;[1,2,3].forEach(i=>$('#t'+i).setAttribute('aria-pressed',i===n));
-  if(n===2)leer();if(n===3&&(!EX||EX.done))examSetup()}
-$('#t1').onclick=()=>tab(1);$('#t2').onclick=()=>tab(2);$('#t3').onclick=()=>tab(3);
-$('#tema').onchange=$('#modo').onchange=()=>{last=null;next()};
+  return `<tr><td>${esc(t)}</td><td>${dom}/${xs.length}</td><td>${n?Math.round(ok/n*100)+'%':'—'}</td><td><div class="meter"><i style="width:${dom/xs.length*100}%"></i></div></td></tr>`}).join('')}
+function tab(n){$('#vp').hidden=n!==1;$('#ve').hidden=n!==3;[1,3].forEach(i=>$('#t'+i).setAttribute('aria-pressed',i===n));
+  if(n===3&&(!EX||EX.done))examSetup()}
+$('#t1').onclick=()=>tab(1);$('#t3').onclick=()=>tab(3);
+$('#tema').onchange=()=>{last=null;next()};
 $('#reset').onclick=()=>{if(confirm('¿Borrar todo tu progreso?')){P={};save();stats();next()}};
 
 /* ===== MODO EVALUACIÓN ===== */
@@ -180,7 +165,7 @@ function examSetup(){clearInterval(tmr);EX=null;
   const base=ALL.filter(x=>sel.has(x.b)),ts=[...new Set(base.map(x=>x.t))].sort((a,b)=>a.localeCompare(b,'es'));
   const hist=H.length?`<h3>Tus últimas evaluaciones</h3><table><tr><th>Fecha</th><th>Tema</th><th>Nota</th><th>Aciertos</th></tr>${H.map(r=>`<tr><td>${esc(r.f)}</td><td>${esc(r.t)}</td><td>${r.nota}/10</td><td>${r.pts}/${r.n}</td></tr>`).join('')}</table>`:'';
   $('#ve').innerHTML=`<div class="card"><h2 style="margin-top:0">Evaluación</h2>
-  <p>Responde todo sin ver las respuestas. Al terminar el tiempo (o al pulsar Entregar) se califica como una prueba: cada acierto vale 1 punto y una respuesta parcial vale 0,5. Usa los bancos marcados arriba.</p>
+  <p>Responde todo sin ver las respuestas. Al terminar el tiempo (o al pulsar Entregar) se califica como una prueba: cada acierto vale 1 punto y una respuesta parcial vale 0,5. </p>
   <div class="bar"><select id="etema" aria-label="Tema"><option value="">Todos los temas</option>${ts.map(t=>`<option>${esc(t)}</option>`).join('')}</select>
   <select id="en" aria-label="Número de preguntas">${[10,20,30,50].map(n=>`<option value="${n}">${n} preguntas</option>`).join('')}<option value="0">Todas</option></select></div>
   <label>Tiempo en minutos: <input id="emin" type="number" min="1" max="300" value="30" style="width:90px;padding:6px;border:1px solid var(--line);border-radius:8px;background:var(--card)"></label>
