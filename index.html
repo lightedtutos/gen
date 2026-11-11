@@ -41,6 +41,11 @@ details{margin-top:14px}summary{cursor:pointer;font-weight:600}
 .bancos label{display:block;padding:3px 0}
 .read details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;margin:8px 0}
 .read p{margin:8px 0}
+.ebar{position:sticky;top:0;z-index:5;display:flex;gap:12px;align-items:center;justify-content:space-between;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:12px}
+.ebar b{font-size:1.3rem;font-variant-numeric:tabular-nums}.ebar .low{color:var(--ko)}
+.eq{margin:12px 0}.eq label.opt{cursor:pointer}.eq input[type=radio]{margin-right:8px}
+.score{font:700 2.4rem/1.1 Georgia,serif}
+.rev{border-left:4px solid var(--line);padding-left:12px;margin:14px 0}.rev.ok{border-color:var(--ok)}.rev.wa{border-color:var(--wa)}.rev.ko{border-color:var(--ko)}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -49,7 +54,7 @@ details{margin-top:14px}summary{cursor:pointer;font-weight:600}
 <h1>Estudio de Embriología</h1>
 <p class="sub" id="sub"></p>
 <div class="tabs" role="group" aria-label="Modo">
-  <button id="t1" aria-pressed="true">Practicar</button><button id="t2" aria-pressed="false">Leer el texto</button>
+  <button id="t1" aria-pressed="true">Practicar</button><button id="t2" aria-pressed="false">Leer el texto</button><button id="t3" aria-pressed="false">Evaluación</button>
 </div>
 <details open><summary>Bancos incluidos</summary><div class="bancos" id="bancos"></div></details>
 <div id="vp">
@@ -65,13 +70,42 @@ details{margin-top:14px}summary{cursor:pointer;font-weight:600}
   <button class="btn sec" id="reset">Borrar progreso</button></details>
 </div>
 <div id="vr" class="read" hidden></div>
+<div id="ve" hidden></div>
 </main>
 <script>const BANCOS=[];</script>
 <script src="curado_20_21.js"></script>
 <script src="c14.js"></script><script src="c15.js"></script><script src="c16.js"></script>
 <script src="c20.js"></script><script src="c21.js"></script><script src="c23.js"></script>
 <script src="c24.js"></script><script src="c25.js"></script><script src="c26.js"></script>
-<script>
+<script type="module">
+function parseTxt(txt){
+  const STOP=new Set('de la el y o en los las del que se un una con por para al es a e lo su sus'.split(' '));
+  const nz=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  const items=[];let tema='Mis preguntas',cur=null;
+  const fin=()=>{if(!cur)return;const a=cur.a.join('\n').trim();
+    const main=a.replace(/\([^)]*\)/g,' ');
+    const groups=[];
+    main.split('\n').forEach(line=>line.split(/[,;]|\s+y\s+/).forEach(part=>{
+      const alts=part.split(/\s*\/\s*|\s+o\s+/).map(x=>nz(x).replace(/[^a-z0-9 ]/g,' ').trim()).filter(Boolean);
+      const toks=alts.map(x=>x.split(/\s+/).filter(w=>w&&!STOP.has(w)&&(w.length>1||/\d/.test(w))));
+      if(alts.length>1){groups.push(alts.map(x=>x.split(/\s+/).filter(w=>w&&!STOP.has(w)&&(w.length>1||/\d/.test(w))).map(w=>w.slice(0,6)).join(' ')).filter(Boolean))}
+      else toks[0]&&toks[0].forEach(w=>groups.push([w.length>6?w.slice(0,6):w]));
+    }));
+    let gs=[...new Set(groups.filter(g=>g.length).map(g=>g.join('|')))];if(gs.length>10)gs=gs.sort((x,y)=>y.length-x.length).slice(0,10);
+    const k=gs.join(';')||nz(a).slice(0,8);
+    items.push([cur.t,cur.q,a||'(sin respuesta)',k,'u']);cur=null};
+  for(const raw of txt.replace(/\r/g,'').split('\n')){
+    const l=raw.trim();if(!l)continue;
+    if(l[0]==='#'){fin();tema=l.replace(/^#+\s*(tema:\s*)?/i,'');continue}
+    const m=l.match(/^(\d+)\s*[.)\-]\s*(.+)$/);
+    if(m){fin();cur={t:tema,q:m[2].trim(),a:[]}}
+    else if(cur)cur.a.push(l);
+  }
+  fin();
+  return {id:'mis',nombre:'Mis preguntas',fuente:'preguntas.txt',items};
+}
+try{const r=await fetch('preguntas.txt',{cache:'no-store'});if(r.ok){const b=parseTxt(await r.text());if(b.items.length)BANCOS.unshift(b)}}catch(e){}
+
 const $=s=>document.querySelector(s);
 const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const alnum=s=>norm(s).replace(/[^a-z0-9]/g,'');
@@ -79,12 +113,12 @@ const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&qu
 let P={};try{P=JSON.parse(localStorage.getItem('emb2')||'{}')}catch(e){}
 const save=()=>{try{localStorage.setItem('emb2',JSON.stringify(P))}catch(e){}};
 const ALL=[];BANCOS.forEach(b=>b.items.forEach((it,i)=>ALL.push({id:b.id+':'+i,b:b.id,bn:b.nombre,t:it[0],q:it[1],a:it[2],k:it[3],ty:it[4]||'m'})));
-let sel=new Set(BANCOS.map(b=>b.id));
+let sel=new Set(BANCOS.some(b=>b.id==='mis')?['mis']:BANCOS.map(b=>b.id));
 $('#sub').textContent=ALL.length.toLocaleString('es')+' preguntas en '+BANCOS.length+' bancos. Las que fallas se repiten más.';
-$('#bancos').innerHTML=BANCOS.map(b=>`<label><input type="checkbox" value="${b.id}" checked> ${esc(b.nombre)} <small>(${b.items.length})</small></label>`).join('');
+$('#bancos').innerHTML=BANCOS.map(b=>`<label><input type="checkbox" value="${b.id}" ${sel.has(b.id)?'checked':''}> ${esc(b.nombre)} <small>(${b.items.length})</small></label>`).join('');
 $('#bancos').onchange=e=>{e.target.checked?sel.add(e.target.value):sel.delete(e.target.value);temas();last=null;next()};
 function pool(){const t=$('#tema').value,m=$('#modo').value;
-  return ALL.filter(x=>sel.has(x.b)&&(!t||x.t===t)&&(m==='mix'||(m==='op'?x.ty==='m':x.ty===m||(m==='e'&&x.ty==='m'))))}
+  return ALL.filter(x=>sel.has(x.b)&&(!t||x.t===t)&&(m==='mix'||(m==='op'?x.ty==='m':x.ty===m||(m==='e'&&(x.ty==='m'||x.ty==='u')))))}
 function temas(){const ts=[...new Set(ALL.filter(x=>sel.has(x.b)).map(x=>x.t))].sort((a,b)=>a.localeCompare(b,'es'));
   $('#tema').innerHTML='<option value="">Todos los temas</option>'+ts.map(t=>`<option>${esc(t)}</option>`).join('')}
 let cur=null,last=null;
@@ -96,7 +130,7 @@ function next(){cur=pick();last=cur;
   if(!cur){$('#card').innerHTML='<p>No hay preguntas con esta combinación. Cambia el tema, el tipo o los bancos.</p>';return}
   $('#card').innerHTML=`<p class="tag">${esc(cur.bn)} · ${esc(cur.t)}</p><p class="q">${esc(cur.q)}</p><div id="body"></div><div id="res"></div>`;
   const m=$('#modo').value;
-  if(cur.ty==='c')cloze();else if(cur.ty==='e')open_();else (m==='op'||(m==='mix'&&Math.random()<.5))?mc():open_()}
+  if(cur.ty==='c')cloze();else if(cur.ty==='e'||cur.ty==='u')open_();else (m==='op'||(m==='mix'&&Math.random()<.5))?mc():open_()}
 function done(html,ok,over){$('#res').innerHTML=`<div class="res">${html}<button class="btn" id="nx">Siguiente</button></div>`;$('#nx').onclick=next;if(over){$('#sk').onclick=()=>{const p=P[cur.id];if(!ok){p.ok++;p.box=Math.min(4,p.box+1);save();stats()}$('#sk').disabled=true}}}
 function mc(){const same=ALL.filter(x=>x!==cur&&x.ty==='m'&&x.t===cur.t),rest=ALL.filter(x=>x!==cur&&x.ty==='m'&&x.t!==cur.t);
   const sh=a=>a.slice().sort(()=>Math.random()-.5);
@@ -117,7 +151,7 @@ function open_(){$('#body').innerHTML='<textarea id="ans" placeholder="Escribe t
     const sc=hit.filter(Boolean).length/gs.length,[cl,tx]=sc>=.6?['ok','Correcto']:sc>=.35?['wa','Parcial']:['ko','Insuficiente'];
     $('#ev').disabled=true;$('#ans').disabled=true;grade(sc>=.6);
     const chips=gs.map((g,j)=>`<span class="${hit[j]?'h':'m'}">${esc(g[0])}</span>`).join('');
-    done(`<span class="v ${cl}">${tx}: ${Math.round(sc*100)}% de los conceptos clave</span><p class="k">${chips}</p><div class="model"><b>Respuesta modelo (del libro):</b> ${esc(cur.a)}</div><button class="btn sec" id="sk">Sí la sabía (corregir)</button> `,sc>=.6,true)};$('#ans').focus()}
+    done(`<span class="v ${cl}">${tx}: ${Math.round(sc*100)}% de los conceptos clave</span><p class="k">${chips}</p><div class="model"><b>Respuesta modelo:</b> ${esc(cur.a)}</div><button class="btn sec" id="sk">Sí la sabía (corregir)</button> `,sc>=.6,true)};$('#ans').focus()}
 function stats(){$('#stats').innerHTML='<tr><th>Banco</th><th>Dominadas</th><th>Aciertos</th><th></th></tr>'+BANCOS.map(b=>{
   const xs=ALL.filter(x=>x.b===b.id),dom=xs.filter(x=>(P[x.id]||{}).box>=3).length;
   let n=0,ok=0;xs.forEach(x=>{const p=P[x.id];if(p){n+=p.n;ok+=p.ok}});
@@ -125,10 +159,75 @@ function stats(){$('#stats').innerHTML='<tr><th>Banco</th><th>Dominadas</th><th>
 function leer(){const el=$('#vr');el.innerHTML=BANCOS.filter(b=>sel.has(b.id)).map(b=>{
   const g={};b.items.forEach(it=>{if(it[4]==='e'||!it[4])(g[it[0]]=g[it[0]]||[]).push(it[2])});
   return `<h2>${esc(b.nombre)}</h2>`+Object.entries(g).map(([t,ps])=>`<details><summary>${esc(t)}</summary>${ps.map(p=>`<p>${esc(p)}</p>`).join('')}</details>`).join('')}).join('')}
-function tab(n){$('#vp').hidden=n!==1;$('#vr').hidden=n!==2;$('#t1').setAttribute('aria-pressed',n===1);$('#t2').setAttribute('aria-pressed',n===2);if(n===2)leer()}
-$('#t1').onclick=()=>tab(1);$('#t2').onclick=()=>tab(2);
+function tab(n){$('#vp').hidden=n!==1;$('#vr').hidden=n!==2;$('#ve').hidden=n!==3;[1,2,3].forEach(i=>$('#t'+i).setAttribute('aria-pressed',i===n));
+  if(n===2)leer();if(n===3&&(!EX||EX.done))examSetup()}
+$('#t1').onclick=()=>tab(1);$('#t2').onclick=()=>tab(2);$('#t3').onclick=()=>tab(3);
 $('#tema').onchange=$('#modo').onchange=()=>{last=null;next()};
 $('#reset').onclick=()=>{if(confirm('¿Borrar todo tu progreso?')){P={};save();stats();next()}};
+
+/* ===== MODO EVALUACIÓN ===== */
+let H=[];try{H=JSON.parse(localStorage.getItem('emb_hist')||'[]')}catch(e){}
+let EX=null,tmr=null;
+const shuf=a=>a.slice().sort(()=>Math.random()-.5);
+const fmt=s=>{s=Math.max(0,Math.round(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')};
+function openScore(x,resp){const a=norm(resp),gs=x.k.split(';').map(g=>g.split('|'));return gs.filter(g=>g.some(w=>a.includes(norm(w)))).length/gs.length}
+function gradeQ(q,resp){const x=q.x;
+  if(resp==null||String(resp).trim()==='')return {pts:0,sc:0};
+  if(q.mc)return {pts:q.opts[+resp]===x.a?1:0};
+  if(x.ty==='c'){const u=alnum(resp),c=alnum(x.a);return {pts:(u===c||lev(u,c)<=Math.floor(c.length/6))?1:0}}
+  const sc=openScore(x,resp);return {pts:sc>=.6?1:sc>=.35?.5:0,sc}}
+function examSetup(){clearInterval(tmr);EX=null;
+  const base=ALL.filter(x=>sel.has(x.b)),ts=[...new Set(base.map(x=>x.t))].sort((a,b)=>a.localeCompare(b,'es'));
+  const hist=H.length?`<h3>Tus últimas evaluaciones</h3><table><tr><th>Fecha</th><th>Tema</th><th>Nota</th><th>Aciertos</th></tr>${H.map(r=>`<tr><td>${esc(r.f)}</td><td>${esc(r.t)}</td><td>${r.nota}/10</td><td>${r.pts}/${r.n}</td></tr>`).join('')}</table>`:'';
+  $('#ve').innerHTML=`<div class="card"><h2 style="margin-top:0">Evaluación</h2>
+  <p>Responde todo sin ver las respuestas. Al terminar el tiempo (o al pulsar Entregar) se califica como una prueba: cada acierto vale 1 punto y una respuesta parcial vale 0,5. Usa los bancos marcados arriba.</p>
+  <div class="bar"><select id="etema" aria-label="Tema"><option value="">Todos los temas</option>${ts.map(t=>`<option>${esc(t)}</option>`).join('')}</select>
+  <select id="en" aria-label="Número de preguntas">${[10,20,30,50].map(n=>`<option value="${n}">${n} preguntas</option>`).join('')}<option value="0">Todas</option></select></div>
+  <label>Tiempo en minutos: <input id="emin" type="number" min="1" max="300" value="30" style="width:90px;padding:6px;border:1px solid var(--line);border-radius:8px;background:var(--card)"></label>
+  <p id="einfo" style="color:var(--mut)"></p><button class="btn" id="estart">Comenzar</button></div>${hist}`;
+  const upd=()=>{const t=$('#etema').value,pl=base.filter(x=>!t||x.t===t).length,n=+$('#en').value||pl,real=Math.min(n,pl);
+    $('#emin').value=Math.max(1,Math.round(real*1.5));$('#einfo').textContent=pl?`Hay ${pl} preguntas disponibles; esta prueba tendrá ${real}.`:'No hay preguntas con esta selección.';$('#estart').disabled=!pl};
+  $('#etema').onchange=$('#en').onchange=upd;upd();$('#estart').onclick=examStart}
+function examStart(){const t=$('#etema').value,min=Math.max(1,+$('#emin').value||30);
+  let pl=shuf(ALL.filter(x=>sel.has(x.b)&&(!t||x.t===t)));const n=+$('#en').value||pl.length;pl=pl.slice(0,n);
+  const mcs=ALL.filter(x=>x.ty==='m');
+  const qs=pl.map(x=>{const q={x};if(x.ty==='m'){q.mc=true;const same=mcs.filter(y=>y!==x&&y.t===x.t),rest=mcs.filter(y=>y!==x&&y.t!==x.t);
+      q.opts=shuf([x.a,...shuf(same).concat(shuf(rest)).slice(0,3).map(y=>y.a)])}return q});
+  EX={qs,t:t||'Todos',start:Date.now(),end:Date.now()+min*60000,done:false};
+  $('#ve').innerHTML=`<div class="ebar"><span>Tiempo restante <b id="etime"></b></span><span id="eprog"></span><button class="btn" id="efin" style="margin:0">Entregar</button></div>`+
+  qs.map((q,i)=>{const x=q.x;let inp;
+    if(q.mc)inp=q.opts.map((o,j)=>`<label class="opt"><input type="radio" name="q${i}" value="${j}">${esc(o)}</label>`).join('');
+    else if(x.ty==='c')inp=`<input type="text" class="ea" data-i="${i}" aria-label="Respuesta ${i+1}" autocomplete="off" style="width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:transparent">`;
+    else inp=`<textarea class="ea" data-i="${i}" aria-label="Respuesta ${i+1}" placeholder="Tu respuesta"></textarea>`;
+    return `<section class="card eq"><p class="tag">Pregunta ${i+1} de ${qs.length} · ${esc(x.t)}</p><p class="q">${esc(x.q)}</p>${inp}</section>`}).join('');
+  const tick=()=>{const left=(EX.end-Date.now())/1000;$('#etime').textContent=fmt(left);$('#etime').className=left<60?'low':'';
+    const a=answers().filter(v=>v!=null&&String(v).trim()!=='').length;$('#eprog').textContent=a+' / '+qs.length+' respondidas';
+    if(left<=0)examFinish(true)};
+  clearInterval(tmr);tmr=setInterval(tick,1000);tick();window.scrollTo(0,0);
+  $('#efin').onclick=()=>{const miss=qs.length-answers().filter(v=>v!=null&&String(v).trim()!=='').length;
+    if(!miss||confirm(`Te faltan ${miss} sin responder. ¿Entregar de todos modos?`))examFinish(false)};
+  $('#ve').oninput=$('#ve').onchange=()=>{}}
+function answers(){return EX.qs.map((q,i)=>{if(q.mc){const r=document.querySelector(`input[name=q${i}]:checked`);return r?r.value:null}
+  const el=document.querySelector(`.ea[data-i="${i}"]`);return el?el.value:null})}
+function examFinish(auto){if(!EX||EX.done)return;clearInterval(tmr);const resp=answers();EX.done=true;
+  EX.res=EX.qs.map((q,i)=>({q,resp:resp[i],g:gradeQ(q,resp[i]),man:false}));
+  const used=(Date.now()-EX.start)/1000;
+  const total=()=>EX.res.reduce((s,r)=>s+(r.man?1:r.g.pts),0);
+  const render=()=>{const n=EX.res.length,pts=total(),pct=Math.round(pts/n*100),nota=(pts/n*10).toFixed(1).replace('.',',');
+    $('#ve').innerHTML=`<div class="card"><p class="tag">${auto?'Se acabó el tiempo. ':''}Resultado · ${esc(EX.t)}</p><div class="score">${nota} / 10</div>
+    <p><b>${pts.toString().replace('.',',')}</b> de ${n} puntos · ${pct}% · <span class="v ${pct>=70?'ok':'ko'}">${pct>=70?'Aprobado':'No aprobado'}</span> (mínimo 70%) · tiempo usado ${fmt(used)}</p>
+    <button class="btn" id="enew">Nueva evaluación</button></div>`+
+    EX.res.map((r,i)=>{const p=r.man?1:r.g.pts,cl=p===1?'ok':p>0?'wa':'ko',x=r.q.x,mine=r.q.mc&&r.resp!=null?r.q.opts[+r.resp]:r.resp;
+      return `<div class="rev ${cl}"><p><b>${i+1}. ${esc(x.q)}</b> <span class="v ${cl}">${p===1?'✓ 1 punto':p>0?'½ 0,5 puntos':'✗ 0 puntos'}</span></p>
+      <p><b>Tu respuesta:</b> ${mine&&String(mine).trim()?esc(String(mine)):'<i>(sin respuesta)</i>'}</p>
+      <div class="model"><b>Respuesta correcta:</b> ${esc(x.a)}</div>
+      ${p<1?`<label><input type="checkbox" data-r="${i}" ${r.man?'checked':''}> Mi respuesta era correcta (corregir)</label>`:r.man?`<label><input type="checkbox" data-r="${i}" checked> Mi respuesta era correcta (corregir)</label>`:''}</div>`}).join('');
+    $('#enew').onclick=examSetup;
+    document.querySelectorAll('[data-r]').forEach(c=>c.onchange=()=>{EX.res[+c.dataset.r].man=c.checked;const y=window.scrollY;render();window.scrollTo(0,y);saveHist()})};
+  const saveHist=()=>{const n=EX.res.length,pts=total();H=H.filter(r=>r.id!==EX.start);H.unshift({id:EX.start,f:new Date(EX.start).toLocaleString('es',{dateStyle:'short',timeStyle:'short'}),t:EX.t,n,pts,nota:(pts/n*10).toFixed(1).replace('.',',')});H=H.slice(0,10);
+    try{localStorage.setItem('emb_hist',JSON.stringify(H))}catch(e){}};
+  EX.res.forEach(r=>{const p=P[r.q.x.id]||(P[r.q.x.id]={box:0,ok:0,n:0});p.n++;if(r.g.pts===1){p.ok++;p.box=Math.min(4,p.box+1)}else p.box=0});save();stats();
+  saveHist();render();window.scrollTo(0,0)}
 temas();stats();next();
 </script>
 </body>
