@@ -59,7 +59,18 @@ small{color:var(--mut)}
 <script>
 const $=s=>document.querySelector(s);
 let CONTEXTO='',msgs=[],busy=false,PR=null;
-const GRATIS=['baidu/cobuddy:free','poolside/laguna-m.1:free','nex-agi/nex-n2.5-mini:free'];
+const RESPALDO=['openrouter/free','google/gemma-4-31b-it:free','google/gemma-4-26b-a4b-it:free'];
+let LISTA=null;
+async function modelosGratis(){
+  if(LISTA)return LISTA;
+  let ids=[];
+  try{const ms=await puter.ai.listModels();ids=ms.map(m=>m.id).filter(id=>typeof id==='string'&&id.endsWith(':free'))}catch(e){console.error('listModels',e)}
+  const pref=[/gpt-oss/,/gemma/,/llama/,/qwen/,/deepseek/,/glm/,/mistral/];
+  const pts=id=>{const i=pref.findIndex(r=>r.test(id));return i<0?99:i};
+  ids=ids.filter(id=>!/coder|vision|embed|image|audio/.test(id)).sort((a,b)=>pts(a)-pts(b)).slice(0,6);
+  LISTA=[...new Set(['openrouter/free',...ids,...RESPALDO])];
+  return LISTA;
+}
 
 function textoDeHTML(html){
   const d=new DOMParser().parseFromString(html,'text/html');
@@ -135,7 +146,7 @@ async function enviar(){
   const b=burbuja('a','…');let acc='';
   let ok=false;const fallos=[];
   const errTxt=e=>{try{if(typeof e==='string')return e;return (e&&e.error&&(e.error.message||e.error.code))||(e&&e.message)||JSON.stringify(e)}catch(_){return String(e)}};
-  for(const modelo of GRATIS){
+  for(const modelo of await modelosGratis()){
     try{
       acc='';
       const r=await puter.ai.chat([{role:'system',content:SISTEMA(t)},...msgs.slice(-8)],{model:modelo,stream:true});
