@@ -1,0 +1,55 @@
+{
+  "tipo": "premisa_y_razon",
+  "instruccion_examen": "Las siguientes preguntas respondan de acuerdo a la siguiente clave",
+  "clave": {
+    "A": "premisa VERDADERA y razón VERDADERA",
+    "B": "premisa VERDADERA y razón FALSA",
+    "C": "premisa FALSA y razón VERDADERA",
+    "D": "premisa FALSA y razón FALSA"
+  },
+  "conectores": ["PERO", "POR LO TANTO", "SIN EMBARGO"],
+  "preguntas": [
+    {
+      "numero": 1,
+      "premisa": "La zona limitante, la placa precordal y el endodermo visceral anterior son inductores neurales implicados en el desarrollo del tubo neural",
+      "conector": "PERO",
+      "razon": "la secreción de LH3, LH4 y HESX-1 por el diencéfalo induce la aparición en el techo del estomodeo de la bolsa hipofisiaria de Rathke"
+    },
+    {
+      "numero": 2,
+      "premisa": "Rostral al organizador ístmico la influencia de FGF-8 contribuye a la organización del prosencéfalo y mesencéfalo",
+      "conector": "PERO",
+      "razon": "los núcleos eferentes viscerales especiales en el mesencéfalo organizan los núcleos de Edinger Westphal"
+    },
+    {
+      "numero": 3,
+      "premisa": "El par craneal olfatorio se forma por neuronas bipolares del revestimiento epitelial del saco nasal que sin mielinizar terminan en bulbo olfatorio",
+      "conector": "PERO",
+      "razon": "el segmento T5-T9 del parasimpático mediante los nervios viscerales y el ganglio celíaco inervan los derivados del intestino anterior"
+    },
+    {
+      "numero": 4,
+      "premisa": "El paleocórtex está formado por la corteza piriforme y la región anteroventral de la ínsula",
+      "conector": "POR LO TANTO",
+      "razon": "de la placa cortical se forma la sustancia gris y de la zona intermedia 2, la sustancia blanca de la corteza cerebral"
+    },
+    {
+      "numero": 5,
+      "premisa": "La vía corticopontocerebelosa es importante en el aprendizaje de habilidades motoras",
+      "conector": "SIN EMBARGO",
+      "razon": "el arquipalio conocido como la corteza olfatoria está representado por el hipocampo que está en el diencéfalo"
+    },
+    {
+      "numero": 6,
+      "premisa": "La glucoproteína reelina y células de la glía radial son importantes para la migración neuronal",
+      "conector": "POR LO TANTO",
+      "razon": "los nervios craneales se desarrollan entre la quinta y la sexta semana, no tienen disposición segmentaria"
+    },
+    {
+      "numero": 7,
+      "premisa": "En la parte ventral del metencéfalo surgen 2 protuberancias, las pirámides consistentes en fibras corticoespinales",
+      "conector": "POR LO TANTO",
+      "razon": "la zona limitante con SHH determina la formación del tálamo"
+    }
+  ]
+}
