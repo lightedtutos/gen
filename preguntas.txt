@@ -173,15 +173,15 @@ El asa intestinal se introduce temporalmente al celoma umbilical
 Dorsalmente es corto y le fija a la pared dorsal  y ventralmente al saco vitelino por el conducto vitelino u onfalomesenterico
 84. ¿Explique la rotación del asa dentro del celoma?
 90 grados en sentido antihorario resultando la Rama cefálica se vaya a la derecha y la rama caudal se vaya a la izquierda en la semana 9 y 10 mientras reingresan giran 180 grados antihorario en total gira 270 grados antihorario
-85. ¿Qué da origen la rama cefálica?
+85. ¿Qué da origen la rama cefálica del intestino medio?
 Duodeno yeyuno e ilion
-86. ¿Qué da origen la rama caudal?
+86. ¿Qué da origen la rama caudal del intestino medio?
 Ileon ciego, colon ascendente, colon transverso (proximal media) y apéndice
-87. ¿Por qué las ramas reingresan?
+87. ¿Por qué las ramas reingresan del intestino medio?
 a. Regresión del riñon mesonéfrico
 b. Disminución del crecimiento del hígado
 c. Expansión de la cavidad abdominal
-88. ¿Cuándo es el ingreso de la rama caudal?
+88. ¿Cuándo es el ingreso de la rama caudal del intestino medio?
 10ma semana y 11va semana
 89. ¿Cómo se ubica después del ingreso el proximal del yeyuno?
 Lado izquierdo cavidad abdominal en el futuro colon descendente
@@ -213,7 +213,7 @@ El colon ascendente es muy corto por lo que el ciego y el primordio del apéndic
 Antes de la semana 10
 103. ¿Qué son los teniae coli?
 Bandas colónicas y las haustras del colon
-104. ¿ Cuáles son las fascias que adhiere la rama caudal?
+104. ¿ Cuáles son las fascias que adhiere la rama caudal del intestino medio?
 a. Fascia retromesocolónica derecha Toldt II
 b. Fascia retromesocolónica izquierda Toldt III
 105. ¿Cuándo empieza el desarrollo del intestino posterior?
@@ -313,7 +313,7 @@ a. La yema pancrearica dorsal es la primera en aparecer, se proyecta hacia el me
 b. La yema ventral muy próxima a la entrada del colédoco
 150. ¿Qué deriva de la yema dorsal?
 Parte superior de la cabeza del páncreas, su cuello, su cuerpo y su cola
-151. ¿Qué deriva de la yema ventral
+151. ¿Qué deriva de la yema ventral del pancreas?
 Proceso unciforme y la parte inferior de la cabeza del pancreas
 152. ¿Cuándo se fusionan las dos yemas pancreáticas?
 Séptima semana
@@ -491,7 +491,7 @@ La piamadre forma un filamento largo se fija al periostio de la primera vértebr
 Se forma por la condensación de la mesénquima que rodea el tubo neural
 57. ¿Cómo surgen las meninges?
 Parte externa engrosada (duramadre)
-Parte interna piamadre y aracnoides (leptomeninges)
+58. Parte interna piamadre y aracnoides (leptomeninges)
 59. ¿Cómo se forma el espacio subaracnoideo?
 En la quinta semana en la piamadre comienza a aparecer espacios llenos liquido que se fusionan y con ello conforman el espacio subaracnoideo
 60. ¿Por qué existe las trabéculas aracnoideas en el adulto?
@@ -523,3 +523,77 @@ lóbulo floculonodular
 Pliegues + lóbulos + giros
 72. ¿en que mes se origina la capa granular externa?
 Tercer mes
+73. ¿Qué sucede en el cuarto mes en relación a las células de Purkinje?
+En el cuarto mes en la zona ventricular, las células de Purkinje, células estrelladas y en cesta migran a la zona o capa molecular
+74. ¿En el mesencéfalo que se encuentra ventral a las placas basales?
+Están los núcleos rojos y sustancia negra
+75. ¿A que da origen la evaginación de la placa del techo del prosencéfalo?
+En la parte mas dorsal de la placa del techo da lugar a una evaginación glándula epífisis
+76. ¿Quién da origen a la adenohipófisis?
+Forma el ectodermo del techo del estomodeo por medio de la inducción de bmp4 y fgf8 el ectodermo da lugar a la placoda ectodérmica que se invagina y con ello tenemos la bolsa hipofisaria de rathke luego ella expresa Lhx3 y lhx4 y hesx1 que hacen que la bolsa hipofisaria se desprenda originando una pequeña vesicula que es la adenohipofisis
+77. ¿Quién da origen a la neurohipófisis?
+lóbulo posterior = neuroectodermo del diencéfalo
+78. ¿Cómo y cuándo se forma el infundíbulo?
+durante la tercera y cuarta semana se forma desde el piso del tercer ventrículo originando el infundíbulo que crece ventralmente al estomodeo
+79. ¿A que da origen el infundíbulo?
+a. Forma el tallo lóbulo posterior porción nerviosa hipofisarios
+b. Células del infundíbulo son los pituicitos (se extienden hasta el hipotálamo)
+80. ¿En relación al prosencéfalo?
+a la 6xta semana el tallo involuciona
+81. ¿Cuándo empieza el desarrollo del telencéfalo?
+Quinta semana
+82. ¿De donde nacen los plexos coroideos?
+Cisura coroidea
+83. ¿Explique de forma concisa el desarrollo de la corteza cerebral?
+Inicialmente lisa en el cuarto mes inician modificaciones evidentes en el sexto mes
+84. ¿Qué estructura nerviosa no tiene un crecimiento acelerado?
+Ínsula de Reil
+85. ¿Qué factores son importantes para la correcta migración neuronal?
+Glucoproteínas reelina y las células de la glía
+86. ¿Cómo son las capas del cerebro en la quinta semana?
+a. Ventricular
+b. Intermedia
+c. Marginal
+87. ¿Cómo son las capas del cerebro en la semana 8?
+a. Ventricular
+b. Subventricular
+c. Intermedia 2 (futura sustancia blanca)
+d. Intermedia 1
+e. Placa cortical
+f. Zona marginal
+88. ¿En que semana se forma la comisura anterior?
+Séptima semana la comisura anterior corteza olfatoria de ambos hemisferios
+89. ¿En que semana se forma la comisura del hipocampo?
+Semana nueve, comisura del hipocampo fórnix conecta hipocampos (arquiopalo) y el cuerpo calloso
+90. ¿Cuándo adquiere su forma el cuerpo calloso?
+Cuarto mes
+91. ¿Qué comisuras usan el techo del diencéfalo para comunicarse?
+Habenular y la posterior
+92. ¿Qué comisuras no utilizan la lamina terminal para comunicarse?
+Habenular y la posterior
+93. ¿Cómo se comunica el quiasma ótico?
+también por el diencéfalo
+94. ¿Qué genes se necesitan para la caracterización del prosencéfalo/ mesencéfalo?
+Wnt8 y OTX-2
+95. ¿Qué genes se necesitan para la caracterización del rombencéfalo /médula espinal?
+Wnt8 y Gbx2
+96. ¿Quiénes contribuyen a la formación del telencéfalo?
+Cresta neural anterior junto con fgf 8 y shh
+97. ¿Qué Gen se relaciona con el desarrollo de los hemisferios cerebrales?
+FoXG-1
+98. ¿Qué gen determina la formación del tálamo?
+shh
+99. ¿Qué gen contribuye a la segmentación de la médula?
+FGF-8
+100. ¿Qué genes contribuye a la organización del prosencéfalo y mesencéfalo?
+Wnt-1
+101. ¿Qué genes determinan el prosencéfalo y mesencéfalo?
+Otx2 LIM-1 EMX1 EMX2
+102. ¿Qué factores ayudan a la determinación de la medula espinal y romboencéfalo?
+Gbx-2 y hox adicional romboencéfalo necita acito retinoico y folistatina
+103. ¿Qué se debe modificar para establecer regiones sensitivas y motoras?
+La expresión en la notocorda de PAX3 PAX 7 MSX1 Y MSX2
+104. ¿Cómo se organiza la parte motora mediante genes?
+La notocorda expresa SHH y con ello da igual a la placa del suelo la emisión de SHH inhibe PAX 3 y PAX 7
+105. ¿Cómo se organiza la parte sensitiva mediante genes?
+Se produce Bmp4 y bmp7 por el ectodermo superficial y eso se establece como placa del techo y hay acción de PAX 3 PAX 7 MSX! MSX2 como moléculas dorsalizantes
