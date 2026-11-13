@@ -58,7 +58,23 @@ small{color:var(--mut)}
 <script>
 const $=s=>document.querySelector(s);
 let CONTEXTO='',msgs=[],busy=false;
-const GRATIS=['baidu/cobuddy:free','poolside/laguna-m.1:free','nex-agi/nex-n2.5-mini:free'];
+// Modelos de respaldo (IDs estables de Puter). Se reemplazan por la lista real si se puede consultar.
+const RESPALDO=['gpt-5-nano','gpt-4o-mini','gemini-2.0-flash','openrouter:meta-llama/llama-3.3-70b-instruct:free','openrouter:deepseek/deepseek-chat-v3-0324:free'];
+let GRATIS=RESPALDO.slice();
+async function cargarModelos(){
+  try{
+    const lista=await puter.ai.listModels();
+    const ids=(Array.isArray(lista)?lista:[]).map(m=>typeof m==='string'?m:(m.id||m.name)).filter(Boolean);
+    if(!ids.length)return;
+    const set=new Set(ids);
+    // 1) los de respaldo que sí existen; 2) cualquier modelo ":free"; 3) modelos pequeños/baratos conocidos
+    const validos=RESPALDO.filter(m=>set.has(m));
+    const libres=ids.filter(i=>/:free$/.test(i)&&!validos.includes(i)).slice(0,4);
+    const peques=ids.filter(i=>/(nano|mini|flash|haiku)/i.test(i)&&!validos.includes(i)&&!libres.includes(i)).slice(0,3);
+    const final=[...validos,...libres,...peques];
+    if(final.length)GRATIS=final;
+  }catch(e){console.warn('No se pudo listar modelos',e)}
+}
 
 function textoDeHTML(html){
   const d=new DOMParser().parseFromString(html,'text/html');
@@ -120,6 +136,7 @@ async function enviar(){
   try{if(puter.auth&&!puter.auth.isSignedIn())await puter.auth.signIn()}
   catch(e){burbuja('s','No se completó el inicio de sesión en Puter. Permite las ventanas emergentes de esta página y vuelve a enviar.');busy=false;$('#send').disabled=false;return}
   $('#inp').value='';
+  if(!enviar.listo){await cargarModelos();enviar.listo=true}
   burbuja('u',t);msgs.push({role:'user',content:t});
   const b=burbuja('a','…');let acc='';
   let ok=false;const fallos=[];
