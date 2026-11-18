@@ -54,7 +54,7 @@ Primordio respiratorio
 26. ¿Dónde surge el primordio respiratorio?
 del intestino anterior ventral
 27. ¿Dónde surge el esófago?
-Del intestino anterior  dorsal
+Del intestino anterior dorsal
 28. ¿En que semana el esófago alcanza su longitud relativa?
 séptima semana
 29. ¿Cómo se llama el espacio entre el esófago y la columna?
@@ -170,7 +170,7 @@ sexta semana
 82. ¿Cómo sucede la hernia umbilical fisiológica?
 El asa intestinal se introduce temporalmente al celoma umbilical
 83. ¿Durante la cuarta semana como esta fijado el yeyuno y el ilion?
-Dorsalmente es corto y le fija a la pared dorsal  y ventralmente al saco vitelino por el conducto vitelino u onfalomesenterico
+Dorsalmente es corto y le fija a la pared dorsal y ventralmente al saco vitelino por el conducto vitelino u onfalomesenterico
 84. ¿Explique la rotación del asa dentro del celoma?
 90 grados en sentido antihorario resultando la Rama cefálica se vaya a la derecha y la rama caudal se vaya a la izquierda en la semana 9 y 10 mientras reingresan giran 180 grados antihorario en total gira 270 grados antihorario
 85. ¿Qué da origen la rama cefálica del intestino medio?
@@ -228,7 +228,7 @@ b. Semana 12-14 Conversion del epitellio en criptas en desarrollo
 c. Semana 30 se establecen criptas tipo adulto
 109. ¿Se donde surge el mesénquima de la cloaca?
 Origen mesodérmico
-110. ¿De  que esta constituida la membrana cloacal?
+110. ¿De que esta constituida la membrana cloacal?
 Endodermo de la cloaca y ectodermo del proctodeo o fóvea anal
 111. ¿Qué parte de la cloaca llega a la alantoides?
 Porción ventral
@@ -254,7 +254,7 @@ Novena semana por muerte celular histológica
 Mide 30-35nm
 122. ¿Qué partes origina el conducto anal y quien la irriga?
 a. Tercios superiores= recto arteria rectal superior
-b. Tercio inferior= fosa anal  arteria rectales inferiores, ramas de las arterias pudendas internas
+b. Tercio inferior= fosa anal arteria rectales inferiores, ramas de las arterias pudendas internas
 123. ¿Qué es la línea pectinea?
 Es la unión región endodérmicas – ectodérmica
 124. ¿Quiénes originan las capas externas del conducto anal?
@@ -264,90 +264,90 @@ Mesenquima circudante
 126. ¿Qué epitelio es la línea blanca?
 Epitelio plano estratificado
 # Glándulas anexas del sistema digestivo
-127. ¿Cuándo y a partir de que se forma el hígado y vías biliares?
+1. ¿Cuándo y a partir de que se forma el hígado y vías biliares?
 Se forma a principios de la cuarta semana a partir del endodermo del intestino anterior y del mesodermo esplácnico del tabique transverso
-128. ¿De que es precursor el divertículo hepático?
+2. ¿De que es precursor el divertículo hepático?
 Higado, vesicula biliar y conductos biliares
-129. ¿Cómo es la división del divertículo hepático?
+3. ¿Cómo es la división del divertículo hepático?
 Craneal mas grande primordio hepático y Caudal mas pequeño primordio vesicular
-130. ¿Qué forma el primordio hepático?
+4. ¿Qué forma el primordio hepático?
 Higado , conductos hepáticos y el colédoco
-131. ¿Qué surge del primordio vesicular?
+5. ¿Qué surge del primordio vesicular?
 Vesícula biliar y el conducto cístico
-132. ¿Cómo se forma los hepatoblastos?
+6. ¿Cómo se forma los hepatoblastos?
 Endodermo de la yema hepática penetra el tabique transverso generando células bipotenciales hepatoblastos
-133. ¿Qué sucede con los hepatoblastos juntos a la vena porta?
+7. ¿Qué sucede con los hepatoblastos juntos a la vena porta?
 Se convierten en células epiteliales de los conductos biliares intrahepatocitos o colongiocitos
-134. ¿A que darán origen los hepatocitos?
+8. ¿A que darán origen los hepatocitos?
 Dan lugar a los cordones hepáticos
-135. ¿Cómo se crean los sinusoides hepáticos?
+9. ¿Cómo se crean los sinusoides hepáticos?
 Los hepatoblastos se anastomosan alrededor de los espacios formados por las venas vitelinas y umbilicales
-136. ¿En que se diferencia la mesénquima del tabique transverso?
+10. ¿En que se diferencia la mesénquima del tabique transverso?
 Endotelio de las sinusoides, tejido conjuntivo del hígado y vesícula, musculo liso de la vesícula y conductos biliares y vasos sanguíneos
-137. ¿En que semana el hígado ocupa mayor parte de la cavidad abdominal?
+11. ¿En que semana el hígado ocupa mayor parte de la cavidad abdominal?
 Quinta y decima semana
-138. ¿Cuándo inicia la función hematopoyética del hígado?
+12. ¿Cuándo inicia la función hematopoyética del hígado?
 Sexta semana
-139. ¿Cuál es el peso del hígado al principio de la etapa fetal?
+13. ¿Cuál es el peso del hígado al principio de la etapa fetal?
 Semana 9 es el 10% del peso total del feto
-140. ¿Cuándo disminuye la función hematopoyética del hígado?
+14. ¿Cuándo disminuye la función hematopoyética del hígado?
 Semana 18 y 20
-141. ¿Cómo se forma el tendón central del diafragma?
+15. ¿Cómo se forma el tendón central del diafragma?
 El contacto de la superficie craneal que no esta rodeada de peritoneo y el tabique transverso
-142. ¿Qué conecta el colédoco?
+16. ¿Qué conecta el colédoco?
 Conducto hepático y cístico (duodeno)
-143. ¿Posición inicial y final del colédoco?
+17. ¿Posición inicial y final del colédoco?
 Colédoco inicialmente cara ventral del duodeno crece y gira desplaza cara dorsal
-144. ¿Cómo se produce la bilis?
+18. ¿Cómo se produce la bilis?
 Degradación de hemoglobina y la almacena en la vesícula biliar
-145. ¿Cuándo llega la bilis hacia el duodeno?
+19. ¿Cuándo llega la bilis hacia el duodeno?
 Semana 13
-146. ¿Cuáles son las funciones de los hepatocitos?
+20. ¿Cuáles son las funciones de los hepatocitos?
 Metabolismo de diversas moléculas de la dieta, la desintoxicación de compuestos, el almacenamiento de glucógeno, secreción de bilis y de grandes cantidades de proteínas séricas en la sangre
-147. ¿de que se desarrolla principalmente el páncreas?
+21. ¿de que se desarrolla principalmente el páncreas?
 A partir de células endodérmicas que se original en la parte caudal del intestino anterior y la participación de mesodermo esplácnico
-148. ¿En que semana empieza el desarrollo del páncreas?
+22. ¿En que semana empieza el desarrollo del páncreas?
 Quinta semana por dos brotes o yemas que derivan de la porción caudal del intestino anterior
-149. ¿Explique la conformación de las yemas del pancreas?
+23. ¿Explique la conformación de las yemas del pancreas?
 a. La yema pancrearica dorsal es la primera en aparecer, se proyecta hacia el mesenterio dorsal
 b. La yema ventral muy próxima a la entrada del colédoco
-150. ¿Qué deriva de la yema dorsal?
+24. ¿Qué deriva de la yema dorsal?
 Parte superior de la cabeza del páncreas, su cuello, su cuerpo y su cola
-151. ¿Qué deriva de la yema ventral del pancreas?
+25. ¿Qué deriva de la yema ventral del pancreas?
 Proceso unciforme y la parte inferior de la cabeza del pancreas
-152. ¿Cuándo se fusionan las dos yemas pancreáticas?
+26. ¿Cuándo se fusionan las dos yemas pancreáticas?
 Séptima semana
-153. ¿El páncreas es un órgano retroperitoneal o intraperitoneal?
+27. ¿El páncreas es un órgano retroperitoneal o intraperitoneal?
 Es retroperitoneal por medio de dos fascias la retroduodenopancreatica y la retropancreatica o fascia e toldt I
-154. ¿Qué sucede en relación a su morfogénesis cuando las yemas pancreáticas se unen?
+28. ¿Qué sucede en relación a su morfogénesis cuando las yemas pancreáticas se unen?
 Hay una reorganización morfológica el epitelio de las ramificaciones contiene células pluripotentes, mientras que el tronco tiene células ductales y endocrinas las celulas proacinares en la punta pierden su multipotencial u se convierten en células madre que formarán acinos todo ello se llama transición secundaria
-155. ¿Cómo es  el desarrollo de los islotes pancreáticos o de Langerhans?
+29. ¿Cómo es el desarrollo de los islotes pancreáticos o de Langerhans?
 Aparecen a las 12 semanas y se desarrollan a partir de células que se separan de los túbulos y se distribuyen entre los acinos
-156. ¿Cómo están conformados los islotes pancreáticos?
+30. ¿Cómo están conformados los islotes pancreáticos?
 Células b o beta secretan insulina y rodeadas por células a o alfa secretan glucagón
-157. ¿Quién secreta insulina y en que semana inicia su secreción?
+31. ¿Quién secreta insulina y en que semana inicia su secreción?
 Células b o beta decima semana inicios del periodo fetal
-158. ¿Quién secreta glucagón y en que semana inicia su secreción?
+32. ¿Quién secreta glucagón y en que semana inicia su secreción?
 Células A o alfa a las 15 semanas
-159. ¿Qué secretan las células d y su función?
+33. ¿Qué secretan las células d y su función?
 Secreta somastostatina regulación del metabolismo de los nutrientes y la homeostasis
-160. ¿Qué secreta las células F y su función?
+34. ¿Qué secreta las células F y su función?
 Secreta polipéptido pancreatico, regulación del metabolismo de los nutrientes y la homeostasis
-161. ¿Quiénes conforman la parte exocrina del páncreas?
+35. ¿Quiénes conforman la parte exocrina del páncreas?
 Acinos pancreáticos
-162. ¿Qué secretan los acinos pancreáticos y como se forman?
+36. ¿Qué secretan los acinos pancreáticos y como se forman?
 Secretan agua, iones bicarbonato y una gran variedad de enzimas digestivas se empieza a desarrollas al inicio del periodo fetal a partir de células que se encuentran agrupadas alrededor de los extremos de los tubos
-163. ¿De donde surge el bazo?
+37. ¿De donde surge el bazo?
 A partir de células mesenquimatosas localizadas en el mesogastrio dorsal
-164. ¿Cuándo empieza el desarrollo del bazo?
+38. ¿Cuándo empieza el desarrollo del bazo?
 Cuarta y quinta semana
-165. ¿Cuándo adquiere su morfología final el bazo?
+39. ¿Cuándo adquiere su morfología final el bazo?
 Adquiere hasta el periodo fetal
-166. ¿A que dan origen las células mesenquimatosas del mesogastrio dorsal?
+40. ¿A que dan origen las células mesenquimatosas del mesogastrio dorsal?
 tejido conjuntivo, los vasos sanguíneos y las células reticulares del bazo
-167. ¿de donde se originan las células linfáticas del bazo?
+41. ¿de donde se originan las células linfáticas del bazo?
 Células hematopoyéticas que migraron desde el hígado
-168. ¿Cuál es la función del bazo en la etapa fetal?
+42. ¿Cuál es la función del bazo en la etapa fetal?
 Funcion hematopoyética especialmente entre 3 y 5 semanas
 # Sistema nervioso
 1. ¿Qué es la Neurulación?
@@ -375,7 +375,7 @@ Neuroblastos
 12. ¿Qué es la zona intermedia en el sistema nervioso?
 Capa del manto sustancia gris
 13. ¿Cómo se conoce a la capa marginal y que contiene?
-Contiene las prolongaciones axónica y dendríticas  también se conoce como sustancia blanca
+Contiene las prolongaciones axónica y dendríticas también se conoce como sustancia blanca
 14. ¿Qué va dar originen el neuroepitelio con nestina?
 Células madre bipotenciales conocidas como neuroblasto que a su vez dará origen a neuronas bipolar, multipolar
 15. ¿Qué producen las células madre bipotenciales para dar origen a las células de la línea glial?
@@ -416,7 +416,6 @@ l. Odontoblastos
 Tejido conectivo timo , tiroides, paratiroides, glándulas salivares y lacrimales
 m. Corazón
 n. Musculo liso de la dermis y vascular
-
 27. ¿Cuál es la ubicación de la Cresta neural circufaringea?
 Rombencéfalo posterior hasta somita 7
 28. ¿Cuál es la ubicación de la cresta neural circunfaringea cardiaca?
@@ -431,7 +430,7 @@ d. Paredes de la porción proximal de las arterias coronarias principales
 e. Tejido conjuntivo que acompaña y rodea los músculos intrínsecos de la lengua
 f. Células de Schawam de los pares craneales
 31. ¿Cuáles son los derivados de la cresta neural circufaringea vagal?
-a.  Neuronas del sistema entérico del esófago hasta el recto
+a. Neuronas del sistema entérico del esófago hasta el recto
 32. ¿Cuáles son los derivados de la cresta neural vagal + craneal?
 Timo paratiroides, células parafoliculares de la tiroides
 33. ¿Cuáles son los derivados de la células de la cresta neural troncal?
@@ -461,7 +460,7 @@ Quinta semana
 Por agujeros intraventriculares de monro
 43. ¿Cómo se comunica del tercer ventrículo al cuarto ventrículo?
 Acueducto de silvio
-44. ¿Por que conducto va líquido cefalorraquídeo  a la medula espinal?
+44. ¿Por que conducto va líquido cefalorraquídeo a la medula espinal?
 Conducto ependimario
 45. ¿Quiénes producen líquido cefalorraquídeo?
 Plexos coroideos
@@ -491,109 +490,601 @@ La piamadre forma un filamento largo se fija al periostio de la primera vértebr
 Se forma por la condensación de la mesénquima que rodea el tubo neural
 57. ¿Cómo surgen las meninges?
 Parte externa engrosada (duramadre)
-58. Parte interna piamadre y aracnoides (leptomeninges)
-59. ¿Cómo se forma el espacio subaracnoideo?
+a. Parte interna piamadre y aracnoides (leptomeninges)
+58. ¿Cómo se forma el espacio subaracnoideo?
 En la quinta semana en la piamadre comienza a aparecer espacios llenos liquido que se fusionan y con ello conforman el espacio subaracnoideo
-60. ¿Por qué existe las trabéculas aracnoideas en el adulto?
+59. ¿Por qué existe las trabéculas aracnoideas en el adulto?
 Porque tienen el mismo origen la piamadre como la aranoideas
-61. ¿Quiénes dan origen a las vellosidades aracnoideas?
+60. ¿Quiénes dan origen a las vellosidades aracnoideas?
 Aracnoides con células endoteliales
-62. ¿Cuál es la función de las vellosidades aracnoideas?
+61. ¿Cuál es la función de las vellosidades aracnoideas?
 Es absorber líquido cefalorraquídeo dirigiéndole a los senos venosos
-63. ¿Quién realiza la mielinización del sistema nervioso central?
+62. ¿Quién realiza la mielinización del sistema nervioso central?
 Oligodendrocitos
-64. ¿Cuándo inicia y termina la mielinización?
+63. ¿Cuándo inicia y termina la mielinización?
 Se inicia en la etapa fetal alrededor del cuarto mes y termina durante el primer año de la vida postnatal
-65. ¿Quién se encarga de la mielinización de las fibras extracelulares?
+64. ¿Quién se encarga de la mielinización de las fibras extracelulares?
 Se encargan las células de schwamn
-66. ¿Cuál es el origen de los pares craneales?
+65. ¿Cuál es el origen de los pares craneales?
 Mielencefalo 12 11 10 9
 Metencéfalo 8 7 6 5
 Mesencéfalo 4 3
 Origen propio 1, 2
-67. ¿Cuándo empieza el desarrollo del encéfalo y tallo encefálico?
+66. ¿Cuándo empieza el desarrollo del encéfalo y tallo encefálico?
 Comienza su desarrollo la quinta semana y su morfogénesis principal semana 13
-68. ¿Cuándo y porque se unen los labios rómbicos?
+67. ¿Cuándo y porque se unen los labios rómbicos?
 En el segundo mes por la placa cerebelosa
-69. ¿Qué surge la parte craneal de la placa cerebelosa?
+68. ¿Qué surge la parte craneal de la placa cerebelosa?
 hemisferios cerebelosas y vermis
-70. ¿Qué surge la parte caudal de la placa cerebelosa?
+69. ¿Qué surge la parte caudal de la placa cerebelosa?
 lóbulo floculonodular
-71. ¿Qué da origen la folia cerebelosa?
+70. ¿Qué da origen la folia cerebelosa?
 Pliegues + lóbulos + giros
-72. ¿en que mes se origina la capa granular externa?
+71. ¿en que mes se origina la capa granular externa?
 Tercer mes
-73. ¿Qué sucede en el cuarto mes en relación a las células de Purkinje?
+72. ¿Qué sucede en el cuarto mes en relación a las células de Purkinje?
 En el cuarto mes en la zona ventricular, las células de Purkinje, células estrelladas y en cesta migran a la zona o capa molecular
-74. ¿En el mesencéfalo que se encuentra ventral a las placas basales?
+73. ¿En el mesencéfalo que se encuentra ventral a las placas basales?
 Están los núcleos rojos y sustancia negra
-75. ¿A que da origen la evaginación de la placa del techo del prosencéfalo?
+74. ¿A que da origen la evaginación de la placa del techo del prosencéfalo?
 En la parte mas dorsal de la placa del techo da lugar a una evaginación glándula epífisis
-76. ¿Quién da origen a la adenohipófisis?
+75. ¿Quién da origen a la adenohipófisis?
 Forma el ectodermo del techo del estomodeo por medio de la inducción de bmp4 y fgf8 el ectodermo da lugar a la placoda ectodérmica que se invagina y con ello tenemos la bolsa hipofisaria de rathke luego ella expresa Lhx3 y lhx4 y hesx1 que hacen que la bolsa hipofisaria se desprenda originando una pequeña vesicula que es la adenohipofisis
-77. ¿Quién da origen a la neurohipófisis?
+76. ¿Quién da origen a la neurohipófisis?
 lóbulo posterior = neuroectodermo del diencéfalo
-78. ¿Cómo y cuándo se forma el infundíbulo?
+77. ¿Cómo y cuándo se forma el infundíbulo?
 durante la tercera y cuarta semana se forma desde el piso del tercer ventrículo originando el infundíbulo que crece ventralmente al estomodeo
-79. ¿A que da origen el infundíbulo?
+78. ¿A que da origen el infundíbulo?
 a. Forma el tallo lóbulo posterior porción nerviosa hipofisarios
 b. Células del infundíbulo son los pituicitos (se extienden hasta el hipotálamo)
-80. ¿En relación al prosencéfalo?
+79. ¿En relación al prosencéfalo?
 a la 6xta semana el tallo involuciona
-81. ¿Cuándo empieza el desarrollo del telencéfalo?
+80. ¿Cuándo empieza el desarrollo del telencéfalo?
 Quinta semana
-82. ¿De donde nacen los plexos coroideos?
+81. ¿De donde nacen los plexos coroideos?
 Cisura coroidea
-83. ¿Explique de forma concisa el desarrollo de la corteza cerebral?
+82. ¿Explique de forma concisa el desarrollo de la corteza cerebral?
 Inicialmente lisa en el cuarto mes inician modificaciones evidentes en el sexto mes
-84. ¿Qué estructura nerviosa no tiene un crecimiento acelerado?
+83. ¿Qué estructura nerviosa no tiene un crecimiento acelerado?
 Ínsula de Reil
-85. ¿Qué factores son importantes para la correcta migración neuronal?
+84. ¿Qué factores son importantes para la correcta migración neuronal?
 Glucoproteínas reelina y las células de la glía
-86. ¿Cómo son las capas del cerebro en la quinta semana?
+85. ¿Cómo son las capas del cerebro en la quinta semana?
 a. Ventricular
 b. Intermedia
 c. Marginal
-87. ¿Cómo son las capas del cerebro en la semana 8?
+86. ¿Cómo son las capas del cerebro en la semana 8?
 a. Ventricular
 b. Subventricular
 c. Intermedia 2 (futura sustancia blanca)
 d. Intermedia 1
 e. Placa cortical
 f. Zona marginal
-88. ¿En que semana se forma la comisura anterior?
+87. ¿En que semana se forma la comisura anterior?
 Séptima semana la comisura anterior corteza olfatoria de ambos hemisferios
-89. ¿En que semana se forma la comisura del hipocampo?
+88. ¿En que semana se forma la comisura del hipocampo?
 Semana nueve, comisura del hipocampo fórnix conecta hipocampos (arquiopalo) y el cuerpo calloso
-90. ¿Cuándo adquiere su forma el cuerpo calloso?
+89. ¿Cuándo adquiere su forma el cuerpo calloso?
 Cuarto mes
-91. ¿Qué comisuras usan el techo del diencéfalo para comunicarse?
+90. ¿Qué comisuras usan el techo del diencéfalo para comunicarse?
 Habenular y la posterior
-92. ¿Qué comisuras no utilizan la lamina terminal para comunicarse?
+91. ¿Qué comisuras no utilizan la lamina terminal para comunicarse?
 Habenular y la posterior
-93. ¿Cómo se comunica el quiasma ótico?
+92. ¿Cómo se comunica el quiasma ótico?
 también por el diencéfalo
-94. ¿Qué genes se necesitan para la caracterización del prosencéfalo/ mesencéfalo?
+93. ¿Qué genes se necesitan para la caracterización del prosencéfalo/ mesencéfalo?
 Wnt8 y OTX-2
-95. ¿Qué genes se necesitan para la caracterización del rombencéfalo /médula espinal?
+94. ¿Qué genes se necesitan para la caracterización del rombencéfalo /médula espinal?
 Wnt8 y Gbx2
-96. ¿Quiénes contribuyen a la formación del telencéfalo?
+95. ¿Quiénes contribuyen a la formación del telencéfalo?
 Cresta neural anterior junto con fgf 8 y shh
-97. ¿Qué Gen se relaciona con el desarrollo de los hemisferios cerebrales?
+96. ¿Qué Gen se relaciona con el desarrollo de los hemisferios cerebrales?
 FoXG-1
-98. ¿Qué gen determina la formación del tálamo?
+97. ¿Qué gen determina la formación del tálamo?
 shh
-99. ¿Qué gen contribuye a la segmentación de la médula?
+98. ¿Qué gen contribuye a la segmentación de la médula?
 FGF-8
-100. ¿Qué genes contribuye a la organización del prosencéfalo y mesencéfalo?
+99. ¿Qué genes contribuye a la organización del prosencéfalo y mesencéfalo?
 Wnt-1
-101. ¿Qué genes determinan el prosencéfalo y mesencéfalo?
+100. ¿Qué genes determinan el prosencéfalo y mesencéfalo?
 Otx2 LIM-1 EMX1 EMX2
-102. ¿Qué factores ayudan a la determinación de la medula espinal y romboencéfalo?
+101. ¿Qué factores ayudan a la determinación de la medula espinal y romboencéfalo?
 Gbx-2 y hox adicional romboencéfalo necita acito retinoico y folistatina
-103. ¿Qué se debe modificar para establecer regiones sensitivas y motoras?
+102. ¿Qué se debe modificar para establecer regiones sensitivas y motoras?
 La expresión en la notocorda de PAX3 PAX 7 MSX1 Y MSX2
-104. ¿Cómo se organiza la parte motora mediante genes?
+103. ¿Cómo se organiza la parte motora mediante genes?
 La notocorda expresa SHH y con ello da igual a la placa del suelo la emisión de SHH inhibe PAX 3 y PAX 7
-105. ¿Cómo se organiza la parte sensitiva mediante genes?
+104. ¿Cómo se organiza la parte sensitiva mediante genes?
 Se produce Bmp4 y bmp7 por el ectodermo superficial y eso se establece como placa del techo y hay acción de PAX 3 PAX 7 MSX! MSX2 como moléculas dorsalizantes
+105. ¿Quiénes conforman las neuritas?
+Dendrita y el axon
+106. ¿Qué son las neuritas?
+Cono de crecimiento emite la prolongación
+107. ¿Cuáles son las moléculas atrayentes que guian al axón?
+Netrinas SHH laminina y fibronectina
+108. ¿Cuáles son las moléculas repelentes en relación al sistema nervioso periferico?
+Semaforinas y efrinas , BMP también existe ambien que repele el crecimiento como es la porción caudal de las somitas (repelente para neuritas y células de la cresta neural)
+109. ¿Cuándo se forman y cual es la función de los nervios raquídeos?
+Final de la cuarta semana e inervan zonas específicas (dermatomos)
+110. ¿Cuándo se forman los nervios craneales?
+Desarrollan quinta y sexta semana
+111. ¿Mencione cuales son los nervios motores?
+3, 4 , 6, 11, 12
+112. ¿Mencione cuales son los nervios sensitivos?
+1, 2, 8
+113. ¿Menciones cuales son los nervios mixtos?
+5 , 7, 9 y 10
+114. ¿Cómo es la conformación del primer par craneal?
+El primer parta esta formado por neuronas bipolares que se diferencian de células del revestimiento epitelial del saco nasal primitivo; constituyen alrededor de 20 haces que sin mielinizar terminan en el bulbo olfatorio
+115. ¿Cómo es la conformación del segundo par craneal?
+Está compuesto por más de un millón de fibras nerviosas procedentes de neuroblastos de la retina
+116. ¿Quiénes conforman el sistema nervioso autónomo simpático?
+T1-L2
+117. ¿Quiénes conforman el sistema nervioso autónomo parasimpático?
+Craneal- sacra
+118. ¿Describe los segmentos del sistema nervioso simpático y sus funciones?
+a. T1-T4 ejerce el control del corazón tráquea pulmones glándulas lagrimales, músculo dilatador de la pupila la mucosa oral y nasal
+b. T5-T9 derivados del intestino anterior
+c. T10- T11 riñon y suprarrenal
+d. T12 derivados intestino medio
+e. L1- L3 derivados del intestino caudal
+119. ¿el sistema nervioso parasimpático con que funciones esta relacionado?
+Funciones viscerales anabólicas
+120. ¿Cómo esta conformado el sistema nervioso parasimpatico?
+Está representado por algunos de los nervios craneales y su componente saco abarca de S2 a S4
+121. ¿Dónde se ubican las neuronas preganglionares?
+Se localizan en la columna visceral eferente a nivel de mesencéfalo, metencéfalo y mielencéfalo y en la columna intermediolateral de los segmentos sacros de la medula espinal
+122. ¿Dónde forman las neuronas postganglionares?
+Adyacentes a donde van a inervar
+123. ¿De donde derivan las neuronas posganglionares?
+De la cresta neural y son colinérgicas
+# Ojo
+1. ¿A que va dar origen el neuroectodermo en relación al ojo?
+vesículas ópticas surgen la retina y los epitelios del cuerpo ciliar y el iris
+2. ¿A que da origen el ectodermo superficial?
+vesículas de la lente (cristalino) y el epitelio anterior de la cornea
+3. ¿A que da origen la cresta craneal neural?
+Cuerpo ciliar, el iris, la córnea, la esclerótica, la coroides anexos del ojo
+4. ¿Qué genes determinan los campos oculares?
+Inicia por la evolución de dos campos oculares que se determinan por la expresión del Pax6 en regiones específicas de la placa neural y regulado por la expresión de SHH en la placa precordal
+5. ¿En que día esta formado los surcos óticos?
+Dia 22
+6. ¿Cómo se crean los surcos ópticos?
+Cuando ya se forma el tubo neural en la región más anterior de los pliegues neurales se crean los surcos ópticos
+7. ¿Cuál es el motivo de que los surcos van a nivel del prosencéfalo y en que día sucede?
+Sucede por la fusión de los pliegues neuronales y sucede en el día 24
+8. ¿Cómo se forman las vesículas ópticas?
+Por la evaginación del prosencéfalo
+9. ¿Qué gen esta implicado en la evaginación del prosencéfalo?
+Rx / RAX transcripción de hemeodomino de la retina
+10. ¿Cómo se forma la placoda de la lente?
+En el dia 28 la vesícula óptica expresa BMP4 y BMP7 esto hace que induzca al ectodermo superficial engrosarse y con ello obtener la placoda de la lente
+11. ¿Qué genes participan en la invaginación de la placoda y morfogénesis de la placoda?
+La placoda de la lente expresa SIX3 y activa Sox2 y PAx6 esto resulta en la invaginación de la placoda y morfogénesis de la placoda
+12. ¿Cuándo se invaginan tanto la placoda de la lente y la vesícula óptica?
+En el día 32 de forma simultanea la placoda de la lente y superficie distal de la vesícula óptica se invaginan
+13. ¿Cuándo se invagina la placoda de la lente que se origina?
+Vesícula de la lente
+14. ¿Cuándo se invagina la vesícula óptica da origen a ¿
+copa óptica
+15. ¿Por qué existe una sincronización de la invaginación tanto de la placoda de la lente y la vesícula óptica?
+Por la formación de filopodios en la placoda
+16. ¿Quién es fundamental para la morfogénesis de la copa óptica?
+Acido retinoico
+17. ¿Describa la organización de la copa óptica?
+a. Capa interna
+b. Espacio intrarretiniano
+c. Capa externa
+18. ¿Cómo se une la copa ótica con el diencéfalo?
+Por el tallo óptico
+19. ¿En donde se desarrolla la cisura coroidea?
+A lo largo de la superficie ventral de la copa óptica
+20. ¿Cuál es la función de los vasos hialoideos?
+Nutren la capa interna de la copa óptica y se proyecta hasta la lente
+21. ¿Cómo se orientan los axones de las celulas ganglionares (ojo)?
+Tallo óptico se expresa PAX-2 sirve la orientación de los axones de las celulas ganglionares
+22. ¿Cuándo se cierra la cisura coroidea?
+Séptima semana
+23. ¿De que esta conformado la capa externa de la retina?
+Epitelio pigmentario
+24. ¿De que esta conformado la capa interna de la retina?
+Retina neural contiene fotoreceptores, neuronas y células de la glia
+25. ¿Qué expresa la capa interna?
+No expresa MITF sino VSX2 y SOX2
+26. ¿Qué expresa toda la vesicula ótica?
+Paz-6 RX OTX-2, SIX3 LHX-2 factor de transcripción M1TF
+27. ¿Qué secreta el ectodermo superficial en relación a la retina?
+FGF
+28. ¿Cómo se reprime el M1TF?
+El ectodermo superfical expresa FGF que activa VSX-2 y SOX2 y con ello reprime el M1TF
+29. ¿Cómo se forma la capa interna de la copa óptica
+El ectodermo superficial secreta FGF actia el VSX-2 y SOX2 y con ello se reprime el M1TF en la porción mas distal de la vesícula originando una invaginación y con ello se origina la capa interna de la copaóptica
+30. ¿Cómo se origina la capa externa de la vesicula óptica?
+El M1TF se mantiene y con ello se diferencia en epitelio pigmentario
+31. ¿A que da origen el ectodermo superficial que a su vez es epitelio superficial en relación al desarrollo del ojo?
+Epitelio de la córnea, lente, epitelio y glándulas de los párpados epitelio de la conjuntiva, glándulas lagrimales
+32. ¿A que da origen el neuroectodermo del cerebro anterior en relación del desarrollo del ojo?
+a. Retina
+b. Epitelio del iris y musculo dilatador de la pupila
+c. Epitelio de los procesos ciliares
+33. ¿A que da origen el mesénquima originado de la cresta neural?
+a. Estroma y epitelio posterior de la córnea
+b. Estroma y músculo esfíntes de la pupila
+c. Estroma y múscula del cuerpo ciliar
+d. Parede del conducto de Schlemm
+e. Limbo esclerocorneal
+f. Esclerotida
+g. Coroides
+h. Pericitos de los capilares oculares
+i. Musculo y mesénquima de los párpados
+j. Mesenquima de la conjuntiva
+k. Mensenquima que rodeoa a las glándulas lacrimales
+l. Tejido conjuntivo de los musculos extraoculares
+m. Huesos de la órbita
+34. ¿A que da origen el mesénquima originado de la mesodermo?
+a. Endotelio de los vasos oculares
+b. Fibras musculares de los músculos extraoculares
+35. ¿De donde se origina el epitelio interno del cuerpo ciliar no pigmentado?
+Se origina de la capa interna de la copa óptica y por lo tanto se continua con la retina neural
+36. ¿De dónde surge el epitelio exterior del cuerpo ciliar pigmentado?
+Surge de la capa externa de la copa óptica y se continua con el epitelio pigmentario de la retina
+37. ¿De donde Proviene el tejido conjuntivo y el musculo ciliar?
+Mesénquima de la cresta neural
+38. ¿Dónde se sitúa el iris?
+Se continua con el cuerpo ciliar y se sitúa en el polo anterior del ojo
+39. ¿Con quien se continua el epitelio posterior del iris pigmentado?
+Se continua con el no pigmentado del cuerpo ciliar
+40. ¿Cómo esta compuesto el epitelio anterior del iris?
+Células mioepiteliales que forma el músculo dilatador
+41. ¿Qué genes se asocian con la determinación del color del ojo?
+Genes EYCL-1, EYCL-2, EYCL-3, SLC24A4 y TYR
+42. ¿A partir de que se forma la lente?
+La lente se forma a partir de la vesícula de la lente que surge del ectodermo superficial
+43. ¿En relación a la formación de la lente que se expresa en el día 34?
+En el dia 34 el epitelio posterior expresa PAX6 Sox2 y FOXE-3 por señales que provienen de la retina y con ello las células empienzan a diferenciarse en células alargadas
+44. ¿Cómo se forma el núcleo de la lente?
+Las fibras primarias de la lente que obliteran, la cavidad de la vesículas de lente
+45. ¿Quién forma el epitelio subcapsular?
+El epitelio anterior de la lente
+46. ¿Cuándo y como crece la lente?
+Sigue creciente prenatal y postnatal por la proliferación y diferenciación de las células del epitelio anterior situadas en el ecuador de la lente
+47. ¿Qué es una cápsula de la lente?
+Es una membrana basal gruesa que es producida por el epitelio anterior y las fibras de la lente
+48. ¿Cómo son los inicios de vascularización de la lente?
+Esta rodeada por un mesénquima que forma la túnica vascular de la lente irrigada por la arteria hialoidea también cubre la pupila y forma la membrana pupilar
+49. ¿Cuándo desaparece la túnica vascular y la membrana pupilar?
+Cuando desaparece la arteria hialoidea
+50. ¿Qué secreta la capa basal de la cornea?
+Colágeno 1,2 y 9
+51. ¿Quiénes conforman el estroma primario de la córnea?
+Es acelular y se forma de colágeno 1,2 y 9
+52. ¿Qué secreta el epitelio posterior de la cornea y en que ayuda?
+Secreta ácido hialurónico ayuda a la migración de células mesenquimatosas al estroma primario
+53. ¿Cómo se forma el estroma segundario?
+Por la llegada de células mesenquimatosas que lo vuelven celular
+54. ¿Cómo se cumple la transparencia de la cornea?
+a. Degradación del ácido hialurónico por queratocitos del estroma
+b. Eliminación de agua por el epitelio posterior
+55. ¿Cuándo es el inicio de la formación de los parpados?
+Séptima semana
+56. ¿Cuándo es la fusión de los parpados y quien lo regula?
+Novena semana por BMP
+57. ¿Cuándo se abren los parpados?
+Se abren séptimo mes
+58. ¿Por qué se da el desarrollo de los parpados?
+Es la proliferación de ectodermo que expresa FOXL-2, induce al mesénquima de la cresta neural
+59. ¿Qué genes se necesita para un correcto desarrollo de los parpados?
+El mesénquima se diferencia en tejido conjuntivo y muscular por señales EGF
+60. ¿en que se diferencia el ectodermo en relación a anexos del ojo?
+El ectodermo se diferencia en epidermis, glándulas y pestañas
+61. ¿Cómo se forma las glándulas tarsales o de meibomio?
+Se forman después del nacimiento por la proliferación del epitelio de la conjuntiva palpebral
+62. ¿Qué genes se necesitan para el correcto desarrollo de la conjuntiva y las glándulas de meibonio?
+Expresión de Foxc-2 y en el epitelio
+63. ¿Cómo se conforma las glándulas lagrimales?
+se desarrollan de la interacción entre el epitelio y el mesénquima de la conjuntiva palpebral en desarrollo
+64. ¿Cómo es el desarrollo de las glándulas lacrimales?
+El mesénquima cuyo origen es la cresta neural, expresa FGF-10 induce al epitelio de la conjuntiva, cuyo origen es el ectodermo a que exprese PAX-6, y así por proliferación del epitelio se forma los adenómeros y los conductos de las glándulas lacrimales, el mesénquima que rodea a la glándula se forma en tejido conjuntivo
+# Oído
+1. ¿De dónde proviene el oído interno?
+Proviene de la vesícula ótica que se origina del ectodermo superficial
+2. ¿De dónde proviene el oído medio?
+es el receso tubotimpánico (crecimiento de la primera bolsa faríngea) y engloba a los huesesillos (mesénquima de la cresta neural)
+3. ¿De donde proviene el conducto auditivo externo?
+Primer surco faríngeo
+4. ¿Qué proviene del ectodermo superficial en relación al oído?
+Células no sensoriales del laberinto membranoso
+5. ¿Qué proviene de las células de la cresta neural en relación al oído?
+a. Células de la estría vascular localizadas en el conducto coclear
+b. Células satélites de los ganglios espiral coclear y vestibular
+c. Células de schawam del nervio vestibular y coclear
+6. ¿Qué proviene del neuroectodermo del cerebro posterior en relación del oído?
+a. Células vellosas (sensoriales) del órgano espiral
+b. Utrículo
+c. Sáculo t cabales semicirculares
+d. Células de soporte de las células vellosas
+e. Neuronas de los ganglios espiral coclear y vestibular
+7. ¿Por qué se desarrollan las placodas óticas?
+Por la inducción del FGF-3 ectodermo superficial expresión de Wnt-8c (cerebro posterior) FGF-9 en el mesodermo y regulado por DLX-5, DLX-6 y Pax2
+8. ¿Qué son y cuando se forman las placodas óticas?
+Dia 20 es un engrosamiento de ectodermo superficial
+9. ¿Cuándo de forma la fosa otica?
+día 23
+10. ¿Cuándo se librera la vesícula ótica u ostocisto?
+Al final de la cuarta semana
+11. ¿Qué forma el mesénquima del ostocisto en relación del oído interno?
+Laberinto membranoso
+12. ¿Cómo se corma el conducto y saco endolinfático?
+La pared dorsal se evagina y da origen a la apéndice endolinfática y con ello al conducto y saco endolinfático
+13. ¿Qué se deriva de la parte dorsal del ostocisto?
+Porción utricular (utrículo y conductos semilunares)
+14. ¿Qué se deriva de la porción ventral del ostocisto?
+Porción sacular (sáculo y el conducto coclear)
+15. ¿Qué es el apéndice endolinfático y su funcion?
+Reservorio de la endolinfa y se comunica con el útriculo y el sáculo a través del conducto endolinfático
+16. ¿Qué surge del apéndice endolinfático?
+El conducto y saco endolinfático
+17. ¿Cuándo se realiza la morfogénesis del oído interno?
+Quinta y octava semana
+18. ¿Cuándo se dormán los canales semilunares?
+Quinta semana
+19. ¿Cuándo se separa el utrículo y sáculo?
+sexta semana
+20. ¿Dónde se forma el conducto coclear?
+Se forma del extremo de la porción sacular que se alarga y se enrolla
+21. ¿Por qué aparecen los ganglios vestibular y espiral?
+Por la delaminación del otocisto
+22. ¿Qué genes contribuyen a la formación del conducto coclear?
+La expresión de la notocorda de SHH hace que se mantengan genes como PAX2 OTX1 y OTX2 en el epitelio del otocisto
+23. ¿Cómo se forma el laberinto vestibular?
+La secreción de Wnt en el cerebro posterior induce la expresión de DLX-5 DLX-6 y GBX-2 en el epitelio del otocisto y con ello se forma el laberinto vestibular
+24. ¿Qué genes en el oído interno depende de la expresión de GBX-2 y Bmp4?
+Dlx-5 y DLX-6
+25. ¿Quiénes corresponden a las áreas sensoriales del oído interno?
+crestas ampollares de los conductos semilunares, la mácula del utrículo y el sáculo y el órgano espiral del conducto coclear
+26. ¿Quiénes se originan de las células progenitoras de las áreas sensoriales oído interno?
+Las células vellosas y las de soporte
+27. ¿Qué gen limita las áreas sensoriales?
+NOTCH
+28. ¿Qué expresan las células precursoras del área sensorial?
+Expresa NOTCH-1 y JAG 1 y posteriormente atoh1 regulada la diferenciación a células vellosas
+29. ¿Por qué empieza la formación del laberinto óseo?
+Por la expresión de BMP4 en el epitelio del otocisto que induce al mesénquima periótico
+30. ¿Dónde se secreta la estría vascular oído interno?
+Pared lateral del conducto coclear
+31. ¿De que esta formado la estría vascular oído interno?
+Por epitelio vascularizado que secreta la endolinfa
+32. ¿La mutación de que genes puede causar sordera oído interno?
+KCNQ-1 y KCN-1
+33. ¿Qué genes son importantes para la secreción de potasio en la endolinfa?
+KCNQ-1 y KCN-1 codifican proteínas asociadas con canales de potasio en las células de la estría vascular
+34. ¿Qué sucede en la cuarta semana en relación al oído medio?
+Partir de la primera bolsa faríngea que crece lateralmente hacia la primera hendidura dando origen a la receso timpánica
+35. ¿A que da origen el receso timpánico?
+a. Distal: cavidad timpánica
+b. Proximal la trompa o tuba faringotimpánica
+36. ¿De que se originan los huesecillos?
+Condensaciones de mesénquima de la cresta neural
+37. ¿Quiénes se originan del mesénquima del primer par craneal/ oído medio?
+Martillo y el yunque
+38. ¿Quiénes se originan del mesénquima del segundo par craneal/ oído medio?
+Estribo
+39. ¿Qué músculos se originan del mesodermo del segundo arco faríngeo en relación del oído medio?
+Músculo del estribo y estapedio
+40. ¿Qué músculos se originan del mesodermo del primer arco faríngeo/ oído medio?
+Músculo del martillo o musculo tenso del tímpano
+41. ¿De que señales depende el desarrollo del oído medio?
+EDN-1, FGF8 y ácido retinoico
+42. ¿De que se origina el oído externo?
+Del primer surco faríngeo
+43. ¿De que se origina la superficie externa de la membrana timpánica?
+Ectodermo superficial se diferencia en epitelio y con ello se forma la superficie externa de la membrana timpánica
+44. ¿Cómo se origina la capa media de la membrana oído externo?
+Mesodermo da origen al mesénquima y posteriormente tejido conjuntivo y así obtenemos la capa media de la membrana
+45. ¿A que da origen el endodermo del receso tubo timpánico /oído externo?
+Epitelio de la superficie interna de la membrana timpánica
+46. ¿Cuándo se forma el conducto auditivo externo?
+Final del segundo mes
+47. ¿Cómo se forma el tapón meatal?
+Al inicio del tercer mes, por la proliferación del epitelio del fondo del conducto en desarrollo
+48. ¿Cuándo se canaliza el tapón meatal?
+Semana 28
+49. ¿Cuándo comienza el desarrollo del pabellón auricular?
+Comienza en la sexta semana
+50. ¿Qué se desarrolla de los tubérculos del primer arco / oído externo?
+a. Helix
+b. Concha
+c. Trago
+51. ¿Qué se desarrolla de los tubérculos del segundo arco / oído externo?
+a. Helix
+b. Antihelix
+c. Antitrago
+d. Lóbulo
+52. ¿Cuándo tiene la ubicación final el pabellón auricular?
+Al inicio de la etapa fetal
+# Tegumentario
+1. ¿Cómo se origina la epidermis?
+Se origina del ectodermo superficial con la participación de la cresta neural y sistema hematopoyético?
+2. ¿De donde surge la dermis?
+Proviene del mesodermo lateral, mesodermo de los dermatomos y la cresta neural
+3. ¿Cómo el ectodermo superficial se convierte en epidermis?
+Wnt debe bloquear el FGF para evitar la especialización en tejido nervioso
+4. ¿Para ser epidermis que se necesita?
+BMP
+5. ¿En relación a la epidermis narre su desarrollo?
+a. Semana 4 comienza su desarrollo
+b. Semana 8 capa basal o peridermis
+c. Semana 10 capa intermedia se diferencia en capa espinosa se diferencia en granular y se diferencia en capa cornea
+d. Semana 21-24 la disposición será
+e. Basal o germinativa
+f. Espinosa
+g. Granulosa
+h. Cornea
+6. ¿Qué es la vermix gaseosa?
+Sebo + Células del peridermo
+7. ¿A dónde se desprende el peridermo?
+Al liquido amniótico
+8. ¿Qué queratinas tiene el peridermo?
+K8 y K18
+9. ¿Qué Queratinas tiene el estratro espinoso?
+a. Semana 8 K5 – K14
+b. Semana 10 K1 -K10 (marcadores de capa espinosa)
+10. ¿Funciones de p63?
+a. Mantiene proliferacion de las células madre epidérmicas
+b. Formacion de las capas de la epidermis
+c. Interviene en la fiderenciacion de los queratonocitos
+d. Importante para la adhesión entre queratonocitos
+e. Importante para la adhesión entre queratonocitos
+f. Controla la adhesión de los queratinocitos de la membrana basal y formación de la membrana basal
+g. Formación de la barrera epidérmica
+h. Es indispensable para la interacción epitelio- mesénquima, necesaria para el desarrollo de los anexos de la epidermis
+11. ¿Origen de los queratocitos?
+Ectodermo superficial unido por desmosomas
+12. ¿Origen melanocitos?
+En la 8va semana primero son melanoblastos , producen melanina en la mitad del embarazo origen células de la cresta neural no tiene uniones
+13. ¿Qué son las células de Meckel?
+Fusionan como meganorreceptores llegan en la semana 8 a la epidermis, se localizan basales adherida con desmosomas
+14. ¿Origen de células responsables del reconocimiento de antígeno?
+a. Son las células de Langerhans
+b. Final de Semana 12 llegan a la epidermis se alojan en el estrato espinoso
+15. ¿Origen de la dermis?
+Viene del mesodermo lateral y paraxial dermomiotomas (somitas)
+16. ¿Cómo se origina fibroblasto en la dermis?
+Las células mesenquimatosas en el 3er mes dan origen a los fibroblastos
+17. ¿Organización de la dermis en la semana 16?
+a. Capa papilar (Fibras finas)
+b. Capa reticular (Fibras gruesas)
+18. ¿En la dermis en que semana las fibras tienes características de un adulto?
+Semana 20
+19. ¿Cuándo es la formación de pelo?
+Semana 9
+20. ¿Qué genes participan en la formación de pelo?
+a. Wnt inducción del folículo piloso
+b. SHH participa en la morfogénesis
+c. Notch destino a las células madre
+d. BMP diferenciación celular
+21. ¿Quién forma la condensación dérmica?
+Forma la placoda epitelial
+22. ¿Qué gen envía la condensación dérmica para formar la yema / en relación del pelo?
+Envia Wnt-5ª
+23. ¿Qué queratinocitos tiene la raíz folículo?
+a. Interna K5-K14
+b. Externa K10
+24. ¿Cómo se forma el tallo del pelo?
+Células epiteliales centrales del bulbo forma la matriz germinal y con ello el tallo del pelo
+25. ¿Cómo se forma el músculo erector del pelo?
+A partir de los fibroblastos que desarrollo la vaina dérmica y con ello el musculo erector del pelo
+26. ¿Cuándo hay presencia de Lanugos?
+Semana 12
+27. ¿En que semana el pelo sobrepasa en la epidermis?
+Semana 15 y 20
+28. ¿De que son derivados las glándulas sebáceas?
+Derivado del folículo piloso
+29. ¿Cómo se originan las glándulas sebáceas en zonas de piel lampiña?
+Se desarrollan como evaginación epidérmicas independientes
+30. ¿Cómo es el desarrollo de la evaginación o yema de la glándula sebácea?
+Crece hacia el tejido conjuntivo y se ramifica para formar un sistema de conductos y alveolos
+31. ¿Cuándo inicia el desarrollo de las glándulas sudoríparas ecrinas?
+Semana 20
+32. ¿Cuándo funcionas las glándulas sudoríparas ecrinas?
+funcionan después del nacimiento
+33. ¿Cuándo funcionan las glándulas sudoríparas apocrinas?
+Después de la pubertad
+34. ¿Cómo inicia el desarrollo de las uñas?
+Es un engrosamiento epidérmico
+35. ¿En que semanas inicia el desarrollo de las uñas?
+a. Manos semana 9
+b. Pies semana 13
+36. ¿Cómo esta conformado los campos ungueales?
+Proximal y bordes laterales
+37. ¿De donde se originan los pliegues epidérmicos /uña?
+De los campos ungueales proximal y bode laterales
+38. ¿A que da origen los pliegues epidérmicos?
+A los pliegues ungueales
+39. ¿Cómo se forma la placa ungueal?
+Proliferacion de los pliegues ungueales crece sobre el campo de la uña y se queratiniza
+40. ¿Cómo se forma la cutícula?
+Surge de una fina capa de epidermis esponiquio recubre la placa ungueal degenera y solo persista basal a la uña la cutícula
+41. ¿Qué es el hiponiquio?
+Borde libre de la uña
+42. ¿En que sema esta formado completamente la matriz y la placa ungueal?
+Semana 15
+43. ¿Cuándo finaliza formación de la uña?
+Semana 17
+44. ¿Cuándo alcanza la uña la punta de los dedos?
+a. Semana 32 en manos
+b. Semana 36 en pies
+45. ¿De que se origina el desarrollo de las glándulas mamarias?
+a. Engrasamiento de ectodermos (Forma porciones secretoras y conductos) Sexta semana
+b. Mesenquima (Tejido conjuntivo y adiposo)
+46. ¿Cuál es el primer marcador para el desarrollo de la cresta mamaria?
+Wnt-10b
+47. ¿Cómo inicia el desarrollo de las glándulas mamarias?
+Inicia con líneas o crestas mamarias
+48. ¿Qué sucede en la semana 10 y 12 en relación a las glándulas mamarias?
+La yeye mamaria brotan otras yemas epiteliales formando estructura lobular con muescas
+49. ¿Qué sucede en las semana 15 en relación a las glándulas mamarias?
+Se ramifican las yemas en 15-20 cordones solidos
+50. ¿Cuándo los cordones mamarios pasan a ser conductos mamarios?
+Semana 20
+51. ¿Cuándo comienza a desarrollarse el pezon?
+Semana 10 y 12
+52. ¿Qué sucede en la semana 15 en relación al pezon?
+El pezon se deprime y forma la fosa mamaria
+53. ¿Cuándo se establece la estructura tubular básica (Glandula mamaria)
+6 meses de gestación
+54. ¿Como inicia la formación de dientes?
+Formación del diente comienza por inducción recíproca entre el epitelio de la cavidad bucal y el mesénquima de la cresta neural; del ectodermo se forman las láminas dentales
+55. ¿Cuando las laminas dentales pasan a yemas dentales?
+Semana 7
+56. ¿Cuantas yemas dentales temenos?
+a. Arriba y abajo 10
+57. ¿Donde se forma la papilla dental?
+Abajo de la yema
+58. ¿Información en relación a la etapa caperuza o copa /diente?
+a. Comprende de Semana 8-9
+b. Órgano del esmalte (origina del ectodermo) rodea a la papila dental
+c. Papila dental (mesénquima de la cresta neural
+59. ¿Información de la etapa de campana /diente?
+a. Semana 10
+b. el saco dental (mesénquima) rodea al órgano del esmalte y a la papila dental
+c. Lamina dental crece yema del diente permanente
+d. Morfogenesis de la Corona
+e. Comienza la histodiferenciación: los odontoblastos secretan predentina, que al calcificar forma la dentina.
+60. ¿Para que se forma el saco dental?
+Para forrar el órgano del esmalte y papila dental
+61. ¿Datos sobre la etapa terminal de la formación del diente?
+a. Es en la semana 18
+b. Esmalte totalmente terminado crece sobre la dentina
+62. ¿Cómo inicia la formación del diente?
+Comienza por inducción recíproca entre el epitelio de la cavidad bucal y el mesénquima de la cresta neural
+63. ¿El esmalte es?
+El esmalte proviene del ectodermo que cubre la cavidad bucal
+64. ¿La papila dental se origina?
+Ectomesenquima cresta neural
+65. ¿Qué surge del ectomesenquima de la papila dental?
+Dentina y pulpa dentaria
+66. ¿De donde se genera el saco dental?
+El saco dental se genera a partir del mesénquima de origen mesodérmico y de la cresta neural.
+67. ¿Qué surge del saco dental?
+Ligamento peridental y cemento
+# Errores de la morfogénesis
+1. ¿Cómo se define a los errores de la morfogénesis?
+Aquellas alteraciones estructurales presentes durante la etapa prenatal que pueden ser aprecuadas mediante métodos clínicos prenatales o al momento de la liberación del feto del claustro materno o ser detectadas tiempo después del nacimiento
+2. ¿Cómo se clasifican los errores de la morfogénesis según la patogenia?
+a. Malformaciones: proceso del desarrollo intrinseco anomalo
+b. Disrupcion: roceso resultado de factores extrínsecos que actúan sobre un proceso
+c. Deformacion: defecyos morfológico en forma o posición causado por fuerzas mecánicas
+d. Displasia: organización anómala de células en un tejido
+3. ¿ejemplo de disrupción?
+Sindrome de bridas ammióticas
+4. ¿Ejemplo de deformación?
+Alteraciones ocasionadas por oligohidramnios
+5. ¿Cuáles son los tipos de alteración morfológicas?
+a. Hipoplasia contra hiperplasia
+b. Hipotrofia contra hipertrofia
+c. Agenesia
+d. Aplasia (falta de desarrollo de un órgano)
+e. Atrofia (decremento en el desarrollo)
+f. Simplasia (Fusion de órganos que deben estar separados)
+g. Esquizoplazia (Separacion de estructuras que deben desarrollarse juntas
